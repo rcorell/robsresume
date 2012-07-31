@@ -1,0 +1,209 @@
+
+Rob Corell
+Software Architect
+rob@robcorell.com
+------------------
+
+SKILLS
+
+Leadership      - Architect/coder on eleven new projects from inception 
+                  to success.
+
+Technical       - API design, web services, networking, C++, JavaScript,
+                  metadata, cross-platform and multilingual development
+
+Communication   - Published author, confident public speaker, skilled at 
+                  remote presence and achieving consensus. I pride myself 
+                  on being easily approachable and accessible even while 
+                  meeting aggressive goals.
+
+
+EXPERIENCE
+
+    Adobe Systems, Sr. Software Architect                       1997-2008
+                                                                         
+        Photoshop Express - Online photo editing, organizing and storage
+            Server architect
+                Adobe's first large web application, this browser-based
+                version of Photoshop for consumers tested the limits of
+                Flash development and helped sculpt the underlying
+                service platform. I created and maintained the database
+                schema, acted as technical liaison for its many client
+                and server teams and wrote the initial deployment
+                script.
+                Implemented in Flash, Flex and AIR.
+                
+        Photoshop.com - Photo editing and storage site
+            Server architect
+                The Photoshop.com server API provides high-level semantic
+                operations on Photoshop Express accounts, and some
+                relational database services. I drove the API design,
+                co-designed the server framework and implemented friends
+                lists and RSS/Atom feeds.
+                Implemented on CentOS Linux using Merb, a custom-
+                designed C++ FastCGI framework, mysql and nginx.
+
+        Ozzy - Massive cloud file storage
+            Consulting architect
+                The Ozzy project aimed to provide a storage service
+                similar to Amazon's S3, and to serve as a low-level
+                platform for future Adobe services.
+                I represented client needs to the Ozzy team, consulted
+                frequently with the lead architect and drove the feature
+                requests.
+                Implemented on Slackware Linux using C++
+                FastCGIs and lighttpd.
+
+        Adobe Bridge - Adobe's file browser and metadata manager
+            Architect of Bridge CS3, Platform architect of Bridge CS2 
+                Starting as a file selection feature of Photoshop,
+                Adobe Bridge became a full-fledged file browser
+                that supports preview of all Adobe formats, acts
+                as an extensibility platform for the product suites
+                and ships with every Adobe application. I created
+                the scripting API and redesigned the app to adhere
+                to Model-View-Controller (MVC) principles.
+                Implemented in C++ for Windows and Mac OS.
+
+        BridgeTalk - Inter-app communication for desktop products
+            Architect 
+                All Adobe applications use BridgeTalk to communicate
+                with each other, usually by sending a JavaScript to
+                be executed in the target DOM.
+                I identified the need for it, gained consensus
+                on its implementation strategy, designed the protocol
+                and API, implemented version 1.0 and aided its integration
+                into all CS2 Suite applications.
+                Implemented in C++ for Mac and Windows.
+
+        Version Cue - Version control for non-programmers
+            Technical Lead 
+                Version Cue 1.0 offered a familiar filesystem
+                metaphor for version control and added an
+                exception-based workflow to handle conflicts.
+                I consulted on the API, and led its implementation
+                and integration into the first Creative Suite. Worked
+                with Adobe legal and University of Florida to make
+                gSoap viable for corporate development.
+                Implemented in C++ for Mac and Windows.
+
+        WebAccess - HTTP, SSL, WebDAV and FTP support
+            Architect 
+                An internal library for full-featured network support
+                not offered by Mac or Windows at the time.
+                Designed API and architecture for asynchronous
+                network protocol support and contributed to
+                implementation.
+                Implemented in C++ on Mac and Windows, using libwww
+                and OpenSSL.
+        
+        CreatePDF.com -Adobe's first full web service
+            Architect 
+                CreatePDF added a web front-end and online subscriptions
+                to the Capture 3.0 server support in Acrobat 5.0,
+                becoming Adobe's first profitable web service.
+                I created and implemented the database schema and
+                client/server protocol.
+                Implemented in C++, Perl, HTML and JavaScript.
+                
+        Acrobat 5.0 - Dynamic integration of back-end web services
+            Plug-in Architect 
+                Created WHAPI (Web-Hosted Application Plug-In) that
+                self-updated, performed intranet and internet service
+                discovery and dynamically added UI to Acrobat to
+                access new services. Supported Capture 3.0-based OCR.
+                Acrobat's first C++ plug-in, implemented for Mac
+                and Windows.
+                
+        Capture 3.0 - Graphics libraries, OCR to HTML
+            Programmer 
+                Capture 3.0 features top-of-the-line OCR and
+                professional workflow tools for large-scale scanning
+                and conversion to PDF or HTML. Nine years later, Adobe
+                continues to sell this exact version. I wrote the 2D
+                graphics library as well as the automatic HTML and
+                stylesheet generation, for which I received a U.S. patent.
+                Implemented in C++ for Mac and Windows.
+
+        ADAM - Scanner library for Acrobat and Photoshop
+            Architect 
+                An internal product, ADAM (Adobe Device Acquisition
+                Manager) provided a general scanning library
+                that abstracted TWAIN and ISIS access. I co-designed it
+                and contributed to the implementation.
+                Implemented in C++ for Mac and Windows.
+    
+    Brute Force Games, CTO                                      1996-1997
+        Unsuccessful startup
+            Two game designers and I incorporated and
+            attempted to secure funding for a computer
+            game. I created an isometric game engine and
+            associated art tools for it.
+            Implemented in C++ for Windows, using DirectX.
+    
+    Simtex / MicroProse, Project Lead, network and graphics     1995-1996
+        Master of Orion II, Agents of Justice
+            Designed and implemented IPX network library,
+            created 2D visual effects, Project Lead of the
+            unreleased "Guardians: Agents of Justice" super-
+            hero title.
+    
+    Origin Systems, Sr. Software Engineer     1993-1995
+        Wing Commander Academy, Ultima VIII,     
+        Wing Commander Armada, Crusader
+            Implemented 3D physics, 16-channel sound
+            system, created custom video codec, implemented
+            (and acted) in the first speech pack for a
+            computer game.
+    
+    University of Texas at Austin, B.S. in Computer Science     1988-1992
+        Member of the ACM, studied AI under Bruce
+        Porter, minored in Geology.
+
+
+NOTABLE WORKS
+
+    * One patent approved, two pending
+          o U.S. Patent #7,249,318 - Automatic Stylesheet Generation
+          o Two pending patents remain confidential; Lori Behun at Adobe can verify.
+    
+    * Co-authored three JavaScript DOM references and guides
+          o Adobe Bridge CS2 JavaScript Reference
+          o Adobe Bridge CS3 JavaScript Reference, also published as a public wiki site.
+          o Adobe Bridge CS3 JavaScript Guide
+    
+    *  Addressed the W3C about XMP
+          o In 2002, addressed the W3C developers and met with Tim Berners-Lee
+            and Guha among others, in order to create an easily-parsable subset of RDF.
+    
+    *  Helped foster telecommuter culture at Adobe
+          o At Adobe, I worked with teams and co-workers sited at numerous
+            locations around the U.S and abroad. Amongst others, I evangelized
+            the use of Instant Messaging (IM), wiki and chatrooms to bind these
+            widely spread teams together. I helped provide the necessary tools,
+            offered technical support, managed the structure of wiki sites and
+            made myself almost constantly available to answer questions via IM.
+            In recognition of the value of these tools, the IT department now runs
+            them and they have become a ubiquitous aspect of Adobe's corporate
+            culture.
+
+
+REFERENCES
+
+    * Dan Brotsky, Chief Architect, Adobe (dbrotsky@adobe.com)
+    * Arno Gourdol, Senior Engineering Manager of AIR, Adobe (arno@adobe.com)
+    * Thomas Nielsen, Director of Web Services and Consumer Applications, Adobe 
+        (nielsen@adobe.com)
+
+
+CONTACT INFORMATION
+
+    email       rob@robcorell.com
+    cell        512.656.2144
+    address     7438 Fireoak Drive, Austin, TX, 78759
+    
+    Instant Messaging:
+        AIM     rkcorell
+        ICQ     44986823
+        MSN     rcorell@sadclown.com
+        Y!      rkcorell

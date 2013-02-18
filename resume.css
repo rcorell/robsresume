@@ -1,17 +1,40 @@
 
 	/* Stylesheet for Rob Corell's resume at http://robsresume.com */
 
-	body 
-	{
-		margin:         0px;
-		padding:		2em 0em 9em 2em; 
-		border:         0px;
-		color:			#280000;
-		background:     white;
-		font-family:	Calibri, Helvetica, Arial, sans-serif;
-		font-size:		1em;
+	#contactInfo {
+		float:			left;
+		list-style: 	none;
+		margin:			0px;
 	}
 
+	#name {
+		font-size:		2em;
+		font-weight:	bold;
+	}
+
+	#resume {
+		color:			#280000;
+		font-family:	Calibri, Helvetica, Arial, sans-serif;
+		padding:		2em 0em 9em 2em; 	
+	}
+
+	#resume	a, a:link, a:active, a:hover, a:visited 
+	{
+		color:			#280000;
+		cursor:			pointer;
+		text-decoration:underline;
+	} 
+
+	#role {
+		font-style:		italic;
+		font-size:		1.5em;				
+	}
+
+	#title {
+		float:			left;
+	}
+
+/*
 	h1
 	{
 		margin:         0px;
@@ -36,16 +59,7 @@
 		font-size:		1.3em;	
 	} 
 	
-	hr
-	{
-		color:			#280000;		
-	}       
-
-	a, a:link, a:active, a:hover, a:visited 
-	{
-		color:			#280000;
-		text-decoration:underline;
-	}            
+          
 
 	img 
 	{
@@ -72,11 +86,10 @@
 		cursor:			help;
 		border-bottom:	none;
 	}
-	
-	.controls
+
+	.contactLine
 	{
-		font-size:		0.7em;
-		cursor:			pointer;			
+		
 	}
 
 	.companyName
@@ -171,8 +184,12 @@
 	{
 		padding:		0em 0em 0.5em 1em;
 	}
+
+
 	
 	.toggleLine
 	{
 		cursor:			pointer;	
 	}
+
+	*/

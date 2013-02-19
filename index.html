@@ -5,17 +5,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rob Corell's resume</title>
-	<link rel="icon" type="image/png" href="RobCorellResumeFavicon.png" />
-	<link rel="stylesheet" type="text/css" href="normalize.css" />
-	<link rel="stylesheet" type="text/css" href="resume.css" />
+	<link rel="icon" 		type="image/png" 	href="RobCorellResumeFavicon.png" />
+	<link rel="stylesheet" 	type="text/css" 	href="normalize.css" />
+	<link rel="stylesheet" 	type="text/css" 	href="resume.css" />
 </head>
 
 
 <body>
 	<div id="resume">
+
 		<header>
 			<div id="title">
-				<div id="name">Rob Corell</div>
+				<h1>Rob Corell</h1>
 				<div id="role">Software Architect</div>
 			</div>
 
@@ -28,53 +29,108 @@
 			<hr style="clear:both" />
 		</header>
 
+
 		<nav id="controls">
-			<a id="masterToggle">show&nbsp;details</a> | 
+			<a id="masterToggle">show details</a> | 
 			<a id="contactToggle">contact</a> |
 			<a href="resume.txt">plaintext</a> |
 			<a href="resume.pdf">PDF</a>
 		</nav>
 
-		<!-- Skills -->
-		<h2>Skills</h2>
-		<div class="padded">
+
+		<section id="skills">
+			<h2>Skills</h2>
 			<table rules="cols">
 				<tr>	
-					<td valign="top" style="border-right:2px;">
+					<td>
 						<span class="skill">Leadership</span>
 					</td>		
 					<td class="skillDescription">
-						Architect/coder on eleven new projects from inception <br/>
-						to success.   
+						Architect/coder on twelve new projects from inception to success.   
 					</td>	
 				</tr>		
 				<tr>	
-					<td valign="top" style="border-right:2px;">
+					<td>
 						<span class="skill">Technical</span>
 					</td>		
 					<td class="skillDescription">
-						API design, web services, networking, C++, JavaScript, <br/>
-						Ruby-on-Rails, jQuery, metadata, cross-platform and <br/>
+						API design, web services, networking, C++, JavaScript,
+						Ruby-on-Rails, jQuery, metadata, cross-platform and 
 						multilingual development.
 					</td>	
 				</tr>
 				<tr>	
-					<td valign="top" style="border-right:2px;"><span class="skill">Communication</span></td>	
+					<td><span class="skill">Communication</span></td>	
 					<td class="skillDescription">
-						Published author, experienced public speaker, skilled at<br/>
-						remote presence and achieving consensus.  I pride myself <br/>
-						on being easily approachable and accessible even while <br/>
+						Published author, experienced public speaker, skilled at
+						remote presence and achieving consensus.  I pride myself
+						on being easily approachable and accessible even while 
 						meeting aggressive goals.  
 					</td>	
 				</tr>
 			</table>		
-		</div>
-		<br/>
-		
-		<!-- Experience -->
-		<h2>Experience</h2>
-	 	
-		<div class="padded">
+		</section>
+
+
+		<section id="experience">
+			<h2>Experience</h2>
+		</section>
+
+		<section>
+			<br/>
+			<br/>
+
+			<!-- PayPal -->
+			<div class="job">
+				<span class="companyName">PayPal</span>, <span class="jobTitle">Senior UI Developer</span><span class="employmentDuration">2011-2013</span>
+				<div class="project">
+					<div>
+						<span class="projectName">Log In with PayPal</span>
+						<span class="projectDescription">
+						Single sign-on commerce identity
+						</span>					
+						<hr/>
+					</div>					
+					<div class="projectDetail">
+						Log In with PayPal allows users to sign in to new websites using their PayPal credentials.  
+						They can then skip the registration process, securely and seamlessly pay for products 
+						and, if they desire, consent to share information like their shipping address and phone number.
+					</div>
+					<div class="projectTech">
+						Implemented with JavaScript, jQuery, Node.js and Java.
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Traitwise -->
+			<div class="job">
+				<span class="companyName">Traitwise</span>, <span class="jobTitle">Chief Technical Officer</span><span class="employmentDuration">2008-2011</span>
+				<div class="project">
+					<div>
+						<span class="projectName">Log In with PayPal</span>
+						<span class="projectDescription">
+							Crowdsourced survey engine with automated analytics
+						</span>
+						<hr/>
+					</div>
+					<div class="projectDetail">
+						A web 2.0 survey engine that allows communities to
+						ask	and	rate new survey questions, view automated
+						analytics about the answers, and create and rate
+						results based on them.
+					</div>
+					<div class="projectTech">
+						Implemented in JavaScript, jQuery, Ruby on Rails, MySQL and Facebook using Ruby in Steel. 
+					</div>
+				</div>
+			</div>
+
+
+
+			<br/>
+			<br/>
+		 	
 			<table>
 			
 				<!-- Traitwise -->
@@ -636,10 +692,9 @@
 					</td>
 	 			</tr>
 			</table>
-		</div>
-	 	<br/>
+		</section>
 
-		<!-- Notable works -->
+
 		<h2>Notable works</h2>
 		<ul class="indentedUnorderedList">
 
@@ -771,7 +826,7 @@
 			</table>
 		</div>
 
-</div>
+	</div>
 	
 
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

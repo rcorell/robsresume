@@ -1,6 +1,9 @@
 
 	/* Stylesheet for Rob Corell's resume at http://robsresume.com */
 
+
+	/* IDs */
+
 	#contactInfo {
 		float:			left;
 		list-style: 	none;
@@ -15,15 +18,25 @@
 	#resume {
 		color:			#280000;
 		font-family:	Calibri, Helvetica, Arial, sans-serif;
+		max-width:		760px;
 		padding:		2em 0em 9em 2em; 	
+		
 	}
 
 	#resume	a, a:link, a:active, a:hover, a:visited 
 	{
-		color:			#280000;
-		cursor:			pointer;
-		text-decoration:underline;
+		color:				#280000;
+		cursor:				pointer;
+		text-decoration:	underline;
 	} 
+
+	#resume h1 {
+		margin:			0px;
+	}
+
+	#skills td {
+		vertical-align:	top;
+	}
 
 	#role {
 		font-style:		italic;
@@ -32,6 +45,55 @@
 
 	#title {
 		float:			left;
+	}
+
+
+	/* Classes */
+
+	.companyName {
+		font-weight:	bold;
+	}
+
+	.employmentDuration {
+		float: 			right;
+		font-weight:	100;
+		font-size:		0.8em;
+		padding-right:	1em;
+	}
+
+	.jobTitle
+	{
+		font-weight:	bold;
+		font-style:		italic;	
+	} 
+
+	.project {
+		padding: 		1em;
+	}
+
+	.projectDescription {
+		font-style:		italic;
+		padding-left: 	2em;
+	}
+
+	.projectName {
+		font-style:			italic;
+		text-decoration: 	underline;
+	}
+
+	.projectTech {
+		padding-top:	1em;
+	}
+
+	.skill
+	{
+		font-style:		italic;
+		padding:		0em 1em;
+	}
+	
+	.skillDescription
+	{
+		padding:		0em 0em 0.5em 1em;
 	}
 
 /*
@@ -175,15 +237,7 @@
 		display:		block;
 	}
 	
-	.skill
-	{
-		font-style:		italic;
-	}
-	
-	.skillDescription
-	{
-		padding:		0em 0em 0.5em 1em;
-	}
+
 
 
 	

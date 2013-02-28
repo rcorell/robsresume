@@ -248,7 +248,12 @@ $(document).ready(function() {
 
 		$job.appendTo( $experience );
 	});
+/*
+	var template = doT.template("<h1>Here is a sample template {{=it.foo}}</h1>");
+	var resultText = template({foo: 'with doT'});
 
+	$experience.append( resultText );
+*/
 	//TODO: handle URL with "/full" at the end that displays all toggle areas
 	//if( /full$/.test(document.URL) || /showDetails$/.test(document.URL)	)
 	//	toggleAll();

@@ -5,9 +5,9 @@
 
 // TODO: namespace
 
-var employmentData = {
-
-	"PayPal"	: 	{ 	
+var employmentData = [
+	{
+		companyName : 			"PayPal",
 		jobTitle : 				"Senior UI Developer",
 		employmentDuration : 	"2011-current",
 		projects : 				
@@ -23,7 +23,8 @@ var employmentData = {
 			]
 	},
 
-	"Traitwise"	:	{
+	{
+		companyName : 			"Traitwise",		
 		jobTitle: 				"Chief Technical Officer",
 		employmentDuration : 	"2008-2011",
 		projects : 				
@@ -38,7 +39,8 @@ var employmentData = {
 			]
 	},
 
-	"Adobe"		: 	{
+	{
+		companyName : 			"Adobe",
 		jobTitle: 				"Senior Architect",
 		employmentDuration : 	"1997-2008",
 		projects : 				
@@ -140,7 +142,8 @@ var employmentData = {
 			]
 	},
 
-	"Brute Force Games" : {
+	{
+		companyName : 			"Brute Force Games",
 		jobTitle: 				"Chief Technical Officer",
 		employmentDuration : 	"1996-1997",
 		projects : 				
@@ -154,7 +157,8 @@ var employmentData = {
 			]
 	},	
 
-	"Simtex / MicroProse" : {
+	{
+		companyName : 			"SimTex / MicroProse",
 		jobTitle: 				"Project Lead, Software Engineer",
 		employmentDuration 	: 	"1995-1996",
 		projects : 				
@@ -177,7 +181,8 @@ var employmentData = {
 			]
 	},	
 
-	"Origin Systems" : {
+	{
+		companyName : 			"Origin Systems",		
 		jobTitle: 				"Software Engineer",
 		employmentDuration : 	"1993-1995",
 		projects : 				
@@ -205,14 +210,27 @@ var employmentData = {
 			]
 	},		
 
-	"University of Texas" : {
+	{
+		companyName : 			"University of Texas, Austin",		
 		jobTitle: 				"Bachelor of Science, Computer Science",
 		employmentDuration : 	"1988-1992",
 		projects : []				
 	},		
 				
-};
+];
 
+
+var experienceTemplate = doT.template( " \
+	<div>\
+		<span class='companyName'>{{=it.companyName }}</span> \
+		<span class='jobTitle'>{{=it.jobTitle}}</span> \
+		<span class='employmentDuration'>{{=it.employmentDuration}}</span> \
+		{{? it.projects }} \
+			<div class='project'> \
+			Foo \
+			</div> \
+		{{?}} \
+	</div>" );
 
 $(document).ready(function() {
 
@@ -224,6 +242,12 @@ $(document).ready(function() {
 
 	var $experience = $("#experience");
 
+	for( var i = 0; i < employmentData.length; i++ ) {
+		var job = employmentData[i];
+		$experience.append( experienceTemplate(job) );	
+	};
+
+/*
 	jQuery.each( employmentData, function(companyName,job) {
 
 		function addElement( tag, cssClass, value, $target ) {
@@ -248,6 +272,7 @@ $(document).ready(function() {
 
 		$job.appendTo( $experience );
 	});
+*/
 /*
 	var template = doT.template("<h1>Here is a sample template {{=it.foo}}</h1>");
 	var resultText = template({foo: 'with doT'});

@@ -34,13 +34,13 @@
 		margin:			0px;
 	}
 
-	#skills td {
-		vertical-align:	top;
-	}
-
 	#role {
 		font-style:		italic;
 		font-size:		1.5em;				
+	}
+
+	#skills td {
+		vertical-align:	top;
 	}
 
 	#title {
@@ -68,7 +68,7 @@
 	} 
 
 	.project {
-		padding: 		1em;
+		padding: 		0.5em;
 	}
 
 	.projectDescription {
@@ -82,7 +82,7 @@
 	}
 
 	.projectTech {
-		padding-top:	1em;
+		padding-top:	0.5em;
 	}
 
 	.skill
@@ -96,154 +96,3 @@
 		padding:		0em 0em 0.5em 1em;
 	}
 
-/*
-	h1
-	{
-		margin:         0px;
-		padding:        0px;
-		font-weight:    bold;
-		font-size:		2em;
-	}        
-
-	h2 
-	{
-		margin:         0px;
-		padding:        0px;
-		font-weight:    normal;
-		font-size:		1.5em;			
-	}        
-
-	h3, h4, h5, h6 
-	{
-		margin:         0px;
-		padding:        0px;
-		font-weight:    normal;
-		font-size:		1.3em;	
-	} 
-	
-          
-
-	img 
-	{
-		border:			none;
-	}
-
-	table 
-	{
-		margin:         0px;
-		border:         0px;
-		color:			#280000;
-		border-style:	hidden;
-	}
-	
-	td 
-	{
-		margin:         0px;
-		border-width:	0px;
-		padding:        0em 2em 0em 0em;		
-	} 			 
-	
-	acronym, abbr 
-	{
-		cursor:			help;
-		border-bottom:	none;
-	}
-
-	.contactLine
-	{
-		
-	}
-
-	.companyName
-	{
-		font-weight:	bold;
-		text-decoration: none;
-	}
-	
-	.dateRange
-	{
-		font-weight:	100;
-		font-size:		0.8em;
-	}
-	
-	.hide
-	{
-		display:		none;
-	}
-	
-	.imInfo
-	{
-		padding-left:	3em	
-	}				
-
-	.indentedUnorderedList
-	{
-		margin:         0px;
-		padding:        0.5em 0em 2em 3em;
-	}
-	
-	.imInfo
-	{
-		cursor:			pointer;
-	}
-	
-	.jobDescription
-	{
-		padding:        5em 0em 0em 0em;			
-	}
-
-	.jobTitle
-	{
-		font-weight:	bold;
-		font-style:		italic;	
-	}           
-
-	.padded
-	{
-		padding:        0.5em 0em 0.5em 3em;
-	}
-	
-	.paddedBottom
-	{
-		padding:		0em 0em 1em 0em; 
-	}
-
-	.project
-	{
-		font-style:		italic;
-		padding:        0.5em 0em 0.5em 3em;
-		padding-left:	3em;
-	}
-	
-	.projectDescription
-	{
-		font-size:		0.9em;
-	}
-	
-	.projectDetail
-	{
-		padding:		0.2em 0.2em 0.2em 0.2em;
-	}			
-
-	.role
-	{
-		font-weight:	normal;
-		font-style:		italic;
-		font-size:		1.5em;			
-	}
-	
-	.show
-	{
-		display:		block;
-	}
-	
-
-
-
-	
-	.toggleLine
-	{
-		cursor:			pointer;	
-	}
-
-	*/

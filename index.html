@@ -13,7 +13,10 @@
 
 <body>
 	<div id="resume">
+	</div>
+	
 
+	<script type="template" id="resumeTemplate">
 		<header>
 			<div id="title">
 				<h1>Rob Corell</h1>
@@ -29,7 +32,6 @@
 			<hr style="clear:both" />
 		</header>
 
-
 		<nav id="controls">
 			<a id="masterToggle">show details</a> | 
 			<a id="contactToggle">contact</a> |
@@ -37,137 +39,65 @@
 			<a href="resume.pdf">PDF</a>
 		</nav>
 
-
 		<section id="skills">
 			<h2>Skills</h2>
-			<table rules="cols">
-				<tr>	
-					<td>
-						<span class="skill">Leadership</span>
-					</td>		
-					<td class="skillDescription">
-						Architect/coder on twelve new projects from inception to success.   
-					</td>	
-				</tr>		
-				<tr>	
-					<td>
-						<span class="skill">Technical</span>
-					</td>		
-					<td class="skillDescription">
-						API design, web services, networking, C++, JavaScript,
-						Ruby-on-Rails, jQuery, metadata, cross-platform and 
-						multilingual development.
-					</td>	
-				</tr>
-				<tr>	
-					<td><span class="skill">Communication</span></td>	
-					<td class="skillDescription">
-						Published author, experienced public speaker, skilled at
-						remote presence and achieving consensus.  I pride myself
-						on being easily approachable and accessible even while 
-						meeting aggressive goals.  
-					</td>	
-				</tr>
-			</table>		
+				<table rules="cols">
+					{{~it.skills :skill}}
+						<tr>	
+							<td class="skill">				{{=skill.name}}			</td>		
+							<td class="skillDescription">	{{=skill.description}}	</td>	
+						</tr>
+					{{~}}
+				</table>
 		</section>
-
 
 		<section id="experience">
 			<h2>Experience</h2>
+			{{~ it.experience :job }}
+				<div>
+					<span class='companyName'>{{=job.companyName }}</span> 
+					<span class='jobTitle'>{{=job.jobTitle}}</span> 
+					<span class='employmentDuration'>{{=job.employmentDuration}}</span> 
+					{{~job.projects :project }}
+						<div class='project'>
+							<span class="projectName">{{=project.name}}</span>
+							<span class="projectDescription">{{=project.description}}</span>
+							<div class="projectDetail">{{=project.detail}}</div>
+							<div class="projectTech">{{=project.tech}}</div>
+						</div> 
+					{{~}}
+				</div>
+			{{~}}
+		</section>	
+
+		<section id="notableWorks">
+			<h2>Notable works</h2>
+			<ul>
+				{{~it.notableWorks :work}}
+					<li>
+						<div class="workBrief">		{{=work.brief}}		</div>
+						<div class="workDetail">	{{=work.detail}}	</div>
+					</li>
+				{{~}}
+			</ul>
 		</section>
 
-
-		<h2>Notable works</h2>
-		<ul>
-
-			<!-- happyfuncoding.com -->
-			<li>
-			    <a href="http://happyfuncoding.com">happyfuncoding.com</a>, an instructional, game-oriented JavaScript IDE
-			</li>
-		
-			<!-- Patent -->
-			<li>
-				<a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PTXT&s1=7,249,318.PN.&OS=PN/7,249,318&RS=PN/7,249,318">U.S. Patent #7,249,318 - Automatic Stylesheet Generation</a>													
-			</li>
-
-			<!-- Publications -->		
-			<li>
-				Co-authored three JavaScript DOM references and guides
-				<ul>
+		<section id="references">
+			<h2>References</h2>
+			<ul>
+				{{~it.references :reference}}
 					<li>
-						<a href="http://www.amazon.com/Adobe-Bridge-Official-JavaScript-Reference/dp/0321409728/ref=sr_1_1?ie=UTF8&qid=1231523346&sr=8-1">Adobe Bridge CS2 JavaScript Reference</a>	
+						<a href="{{=reference.link}}">{{=reference.name}}</a> - <i>{{=reference.role}}</i>, {{=reference.company}}
 					</li>
-					<li>
-						<a href="http://www.adobe.com/devnet/bridge/">Adobe Bridge CS3 JavaScript Reference</a>, also published as a (now-defunct) public wiki site.
-					</li>
-					<li>
-						<a href="http://www.adobe.com/devnet/bridge/">Adobe Bridge CS3 JavaScript Guide</a>	
-					</li>
-				</ul>				
-			</li>			
+				{{~}}
+			</ul>
+		</section>	
 
-			<!-- W3C Address -->
-			<li>
-				Addressed the <abbr title="World Wide Web Consortium">W3C</abbr> about <abbr title="Adobe's Open Source 'eXtensible Metadata Platform'">XMP</abbr> 
-				<ul>
-					<li>
-						In 2002, <a href="http://www2002.org/devday.html#D2">addressed the W3C developers</a> and met with <a href="http://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a> and <a href="http://en.wikipedia.org/wiki/Ramanathan_V._Guha">Guha</a> among others, in order to create an easily-parsable subset of <a href="http://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a>.
-					</li>
-				</ul>				
-			</li>		
-			
-			<!-- IM Culture -->
-			<li>
-				Helped foster telecommuter culture at Adobe
-				<ul>
-					<li>
-						At Adobe, I worked with teams and co-workers sited at numerous locations around the U.S and abroad.  Amongst others, I evangelized 
-						the use of Instant Messaging (IM), wiki and chatrooms to bind these widely spread teams together.  I helped provide the necessary tools,
-						offered technical support, managed the structure of wiki sites and made myself almost constantly available to answer questions via IM.
-						In recognition of the value of these tools, the IT department now runs them and they have become a ubiquitous aspect of Adobe's corporate
-						culture.
-					</li>
-				</ul>				
-			</li>
-			
-		</ul>
-		
-		
-		<!-- References -->
-		<h2>References</h2>
-		<ul>
-			<li>
-				<a href="www.linkedin.com/pub/zack-booth-simpson/0/4b3/108">Zack Simpson</a>, <i>Chief Architect</i>, Traitwise
-			</li>
-			<li>	
-				<a href="http://www.linkedin.com/in/dbrotsky">Dan Brotsky</a>, <i>Chief Architect</i>, Adobe
-			</li>
-			<li>
-				<a href="http://www.linkedin.com/in/arnog">Arno Gourdol</a>, <i>Senior Director, Web Platform and Authoring</i>, Adobe
-			</li>
-			<li>
-				<a href="http://www.linkedin.com/in/thomasbnielsen">Thomas Nielsen</a>, <i>Director of Web Services and Consumer Applications</i>, Adobe
-			</li>
-		</ul>
+	</script>
 
-		<!-- Contact Information -->
-		<h2>Contact Information</h2>
-		<div>
-			<table>
-				<tr>	<td>email</td>		<td><a href="mailto:rob@robcorell.com">rob@robcorell.com</a></td>	</tr>
-				<tr>	<td>cell</td>		<td><a href="mailto:5126562144@mmode.com">512.656.2144</a></td>	</tr>
-				<tr>	<td>address</td>	<td>12340 Alameda Trace Circle #2309, Austin, TX, 78727</td> </tr>
-				<tr>	<td>LinkedIn</td>	<td><a href="http://www.linkedin.com/in/rcorell">public profile</a></td>	</tr>
-				<tr>	<td>Moby Games</td>	<td><a href="http://www.mobygames.com/developer/sheet/view/developerId,3910/">public profile</a></td> </tr>			
-			</table>
-		</div>
-
-	</div>
-	
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="doT.js"></script> 
-<script src="resume.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="doT.js"></script> 
+	<script src="resume.js"></script>
 
 </body>
 </html>

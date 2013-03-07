@@ -15,15 +15,15 @@ robsresume.data = {
 		
 		{
 			name: 			"Technical",
-			description: 	"API design, web services, networking, C++, JavaScript,	Ruby-on-Rails, \
-							jQuery, metadata, cross-platform and multilingual development."
+			description: 	"API design, web services, networking, C++, JavaScript, Ruby-on-Rails, " +
+							"jQuery, metadata, cross-platform and multilingual development."
 		},
 
 		{
 			name: 			"Communication",
-			description: 	"Published author, experienced public speaker, skilled at remote presence \
-							and achieving consensus.  I pride myself on being easily approachable and \
-							accessible even while meeting aggressive goals."
+			description: 	"Published author, experienced public speaker, skilled at remote presence " +
+							"and achieving consensus.  I pride myself on being easily approachable and " +
+							"accessible even while meeting aggressive goals."
 		}
 	],
 	
@@ -37,9 +37,9 @@ robsresume.data = {
 					{
 						name 		: 	"Log In with PayPal",
 						description : 	"Single sign-on commerce identity",
-						detail		: 	"Log In with PayPal allows users to sign in to new websites using their PayPal credentials.  \
-										They can then skip the registration process, securely and seamlessly pay for products \
-										and, if they desire, consent to share information like their shipping address and phone number.",
+						detail		: 	"Log In with PayPal allows users to sign in to new websites using their PayPal credentials.  " +
+										"They can then skip the registration process, securely and seamlessly pay for products " +
+										"and, if they desire, consent to share information like their shipping address and phone number.",
 						tech		: 	"Implemented with JavaScript, jQuery, Node.js, Linux and Java." 
 					}
 				]
@@ -54,9 +54,9 @@ robsresume.data = {
 					{
 						name 		: 	"<a href='http://traitwise.com'>Traitwise.com</a>",
 						description	: 	"Crowdsourced survey engine with automated analytics",
-						detail		: 	"A web 2.0 survey engine that allows communities to	ask	and	rate new survey questions, view automated \
-										analytics about the answers, and create and rate results based on them.",
-						tech		: 	"Implemented with Ruby on Rails, jQuery, Apache, MySQL, Ubuntu and Facebook using Ruby in Steel" 
+						detail		: 	"A web 2.0 survey engine that allows communities to	ask	and	rate new survey questions, view automated " +
+										"analytics about the answers, and create and rate results based on them.",
+						tech		: 	"Implemented with Ruby on Rails, jQuery, Apache, MySQL, Ubuntu and Facebook using Ruby in Steel." 
 					}
 				]
 		},
@@ -71,20 +71,21 @@ robsresume.data = {
 						name 		: 	"<a href='http://photoshop.com'>Photoshop.com</a>",					
 						description : 	"Online photo editing, organizing and storage",
 						role		: 	"Server Architect",					
-						detail		: 	"Adobe's first large web application, this browser-based version of Photoshop for consumers tested \
-										the limits of the Flash development and helped sculpt the underlying service platform.  I created \
-										and maintained the database schema, acted as technical liaison for its many client and server teams \
-										and managed the initial deployment.",
-						tech		: 	"Implemented with Flash, Flex, AIR, Merb, nginx, custom C++ database (Ozzy) and CentOS" 
+						detail		: 	"Adobe's first large web application, this browser-based version of Photoshop for consumers tested " +
+										"the limits of the Flash development and helped sculpt the underlying service platform.  I created " +
+										"and maintained the database schema, acted as technical liaison for its many client and server teams " +
+										"and managed the initial deployment.  I also designed the API for the middleware servers and implemented " +
+										"the friends feature.",
+						tech		: 	"Implemented with Flash, Flex, C++, AIR, Merb, nginx, custom database (Ozzy) and CentOS." 
 					},
 
 					{
 						name 		: 	"Ozzy",
 						description : 	"Cloud file storage",
 						role		: 	"Consulting Architect",  
-						detail		: 	"The Ozzy project aimed to provide a storage service comparable to Amazon's S3, and to serve as a \
-										low-level platform for future Adobe services.  I represented client needs to the Ozzy team, consulted \
-										with the lead architect and drove feature requests.",
+						detail		: 	"The Ozzy project aimed to provide a storage service comparable to Amazon's S3, and to serve as a " +
+										"low-level platform for future Adobe services.  I represented client needs to the Ozzy team, consulted " +
+										"with the lead architect and drove feature requests.",
 						tech		: 	"Implemented with C++, Slackware, FastCGIs and lighttpd." 
 					},
 
@@ -247,7 +248,7 @@ robsresume.data = {
 		},
 
 		{
-			brief: 		"<a href='http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-bool.html&r=1&f=G&l=50&co1=AND&d=PTXT&s1=7,249,318.PN.&OS=PN/7,249,318&RS=PN/7,249,318'>U.S. Patent #7,249,318 - Automatic Stylesheet Generation</a>",
+			brief: 		"<a href='http://www.google.com/patents/US7249318'>U.S. Patent #7,249,318 - Automatic Stylesheet Generation</a>",
 			detail: 	""
 		},
 
@@ -300,13 +301,27 @@ robsresume.data = {
 
 $(document).ready(function() {
 
-	var resumeTemplate = doT.template( $("#resumeTemplate").html() );	
-	$("#resume").append( resumeTemplate(robsresume.data) );	
+	var htmlResumeDotTemplate 	= doT.template( $("#htmlResumeTemplate").html() );
+	var htmlResume 				= htmlResumeDotTemplate( robsresume.data );
+	var textResumeDotTemplate 	= null;
+	var textResume 				= null;
+
+	$("#resumeContent").html( htmlResume );	
 
  	$( '#contactInfo' ).hide();
- 	$( '#contactToggle' ).click( function() {
- 			$( '#contactInfo' ).toggle();
- 		});	
+ 	$( '#contact' ).click( function() {
+ 		$( '#contactInfo' ).fadeToggle();
+ 	});	
+
+ 	$("#resumeLink").click( function() {
+		$("#resumeContent").html( htmlResume );	
+ 	});
+
+ 	$("#plaintext").click( function() {
+		textResumeDotTemplate 	= textResumeDotTemplate || doT.template( $("#textResumeTemplate").html() );	
+		textResume				= textResume || textResumeDotTemplate( robsresume.data );
+		$("#resumeContent").html( textResume );	
+ 	});
 
  });
 

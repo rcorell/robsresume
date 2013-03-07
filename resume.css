@@ -5,22 +5,22 @@
 	/* IDs */
 
 	#contactInfo {
-		float:			left;
-		list-style: 	none;
-		margin:			0px;
+		float:				left;
+		list-style: 		none;
+		margin:				0px;
 	}
 
 	#name {
-		font-size:		2em;
-		font-weight:	bold;
+		font-size:			2em;
+		font-weight:		bold;
 	}
 
 	#resume {
-		color:			#280000;
-		font-family:	Calibri, Helvetica, Arial, sans-serif;
-		max-width:		760px;
-		padding:		2em 0em 9em 2em; 	
-		
+		border-left:		16px solid #640000;
+		color:				#280000;
+		font-family:		Calibri, Helvetica, Arial, sans-serif;
+		max-width:			760px;
+		padding:			2em 0em 9em 2em; 	
 	}
 
 	#resume	a, a:link, a:active, a:hover, a:visited 
@@ -31,49 +31,53 @@
 	} 
 
 	#resume h1 {
-		margin:			0px;
+		margin:				0px auto;
 	}
 
 	#role {
-		font-style:		italic;
-		font-size:		1.5em;				
+		font-style:			italic;
+		font-size:			1.5em;				
 	}
 
 	#skills td {
-		vertical-align:	top;
+		vertical-align:		top;
 	}
 
 	#title {
-		float:			left;
+		float:				left;
 	}
 
 
 	/* Classes */
 
 	.companyName {
-		font-weight:	bold;
+		font-weight:		bold;
 	}
 
 	.employmentDuration {
-		float: 			right;
-		font-weight:	100;
-		font-size:		0.8em;
-		padding-right:	1em;
+		float: 				right;
+		font-weight:		100;
+		font-size:			0.8em;
+		padding-right:		1em;
+	}
+
+	.job {
+		padding-bottom:  	1em;
 	}
 
 	.jobTitle
 	{
-		font-weight:	bold;
-		font-style:		italic;	
+		font-weight:		bold;
+		font-style:			italic;	
 	} 
 
 	.project {
-		padding: 		0.5em;
+		padding: 			0.5em;
 	}
 
 	.projectDescription {
-		font-style:		italic;
-		padding-left: 	2em;
+		font-style:			italic;
+		padding-left: 		2em;
 	}
 
 	.projectName {
@@ -82,17 +86,17 @@
 	}
 
 	.projectTech {
-		padding-top:	0.5em;
+		padding-top:		0.5em;
 	}
 
 	.skill
 	{
-		font-style:		italic;
-		padding:		0em 1em;
+		font-style:			italic;
+		padding:			0em 1em;
 	}
 	
 	.skillDescription
 	{
-		padding:		0em 0em 0.5em 1em;
+		padding:			0em 0em 0.5em 1em;
 	}
 

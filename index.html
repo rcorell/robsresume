@@ -12,11 +12,9 @@
 
 
 <body>
-	<div id="resume">
-	</div>
-	
 
-	<script type="template" id="resumeTemplate">
+	<div id="resume">
+
 		<header>
 			<div id="title">
 				<h1>Rob Corell</h1>
@@ -33,12 +31,18 @@
 		</header>
 
 		<nav id="controls">
-			<a id="masterToggle">show details</a> | 
-			<a id="contactToggle">contact</a> |
-			<a href="resume.txt">plaintext</a> |
-			<a href="resume.pdf">PDF</a>
+			<a id="resumeLink">resume</a> | 
+			<a id="CV">CV</a> |			
+			<a id="plaintext">plaintext</a> |
+			<a href="resume.pdf">PDF</a> |
+			<a id="contact">contact</a> 			
 		</nav>
 
+		<div id="resumeContent"></div>
+
+	</div>
+
+	<script type="template" id="htmlResumeTemplate">
 		<section id="skills">
 			<h2>Skills</h2>
 				<table rules="cols">
@@ -54,8 +58,8 @@
 		<section id="experience">
 			<h2>Experience</h2>
 			{{~ it.experience :job }}
-				<div>
-					<span class='companyName'>{{=job.companyName }}</span> 
+				<div class="job">
+					<span class='companyName'>{{=job.companyName }}</span> - 
 					<span class='jobTitle'>{{=job.jobTitle}}</span> 
 					<span class='employmentDuration'>{{=job.employmentDuration}}</span> 
 					{{~job.projects :project }}
@@ -92,7 +96,50 @@
 				{{~}}
 			</ul>
 		</section>	
+	</script>
 
+	<script type="template" id="textResumeTemplate">
+		<pre>
+			<br/>
+			Rob Corell<br/>
+			Software Architect<br/>
+			------------------<br/>
+			rob@robcorell.com<br/>
+			<br/>
+			<br/>
+			SKILLS<br/>
+			<br/>
+			{{~it.skills :skill}}
+				{{=skill.name}} - {{=skill.description}}<br/>
+				<br/>
+			{{~}}
+			<br/>
+			<br/>
+			EXPERIENCE<br/>
+			<br/>
+			{{~ it.experience :job }}
+				{{=job.companyName }}, {{=job.jobTitle}} ({{=job.employmentDuration}})<br/>
+				{{~job.projects :project }}
+					{{=project.name}} - {{=project.description}}<br/>
+					{{=project.detail}}<br/>
+					{{=project.tech}}<br/>
+					<br/>
+				{{~}}
+				<br/>
+			{{~}}
+			<br/>
+			<br/>
+			NOTABLE WORKS 
+			<br/>
+			{{~it.notableWorks :work}}
+			    {{=work.brief}}<br/>
+			    {{=work.detail}}<br/>
+				<br/>
+			{{~}}
+			<br/>
+			<br/>
+			References available upon request.
+		</pre>
 	</script>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -101,3 +148,4 @@
 
 </body>
 </html>
+

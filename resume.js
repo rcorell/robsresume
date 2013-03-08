@@ -93,10 +93,10 @@ robsresume.data = {
 						name 		: 	"Adobe Bridge",
 						description : 	"File browser and metadata manager",
 						role		: 	"Architect", 					
-						detail		: 	"Starting as a file selection feature of Photoshop, Adobe Bridge became a full-fledged file browser \
-										that supports preview of all Adobe formats, acts as an extensibility platform for the product suites \
-										and ships with every Adobe application.  I created the JavaScript API and redesigned the app to \
-										adhere to Model-View-Controller principles.",
+						detail		: 	"Starting as a file selection feature of Photoshop, Adobe Bridge became a full-fledged file browser " +
+										"that supports preview of all Adobe formats, acts as an extensibility platform for the product suites " +
+										"and ships with every Adobe application.  I created the JavaScript API and redesigned the app to " +
+										"adhere to Model-View-Controller principles.",
 						tech		: 	"Implemented in C++ for Windows and Mac OS." 
 					},
 
@@ -104,10 +104,10 @@ robsresume.data = {
 						name 		: 	"BridgeTalk",
 						description : 	"JavaScript inter-app communication for desktop products",
 						role		: 	"Architect", 					
-						detail		: 	"All Adobe applications use BridgeTalk to communicate with each other, usually by sending a \
-										JavaScript to be executed in the target DOM.  I identified the need for it,	gained consensus \
-										on its implementation strategy, designed the protocol and API, implemented version 1.0 and \
-										aided its integration into all CS2 Suite applications.",
+						detail		: 	"All Adobe applications use BridgeTalk to communicate with each other, usually by sending a " +
+										"JavaScript to be executed in the target DOM.  I identified the need for it,	gained consensus " +
+										"on its implementation strategy, designed the protocol and API, implemented version 1.0 and " +
+										"aided its integration into all CS2 Suite applications.",
 						tech		: 	"Implemented in C++ for Windows and Mac OS." 
 					},
 
@@ -115,12 +115,12 @@ robsresume.data = {
 						name 		: 	"Version Cue",
 						description : 	"Version control for non-programmers",
 						role		: 	"Technical Lead", 					
-						detail		: 	"Version Cue 1.0 offered a familiar filesystem metaphor	for version control and added an \
-										exception-based workflow to handle conflicts. I consulted on the API, led its implementation \
-										and integration into the first Creative Suite and selected the Open Source \
-										<a href='http://www.cs.fsu.edu/~engelen/soap.html'>gSoap</a> library for	our remote \
-										procedure-call needs; worked with Adobe	legal and University of Florida to make it viable \
-										for corporate development.",
+						detail		: 	"Version Cue 1.0 offered a familiar filesystem metaphor	for version control and added an " +
+										"exception-based workflow to handle conflicts. I consulted on the API, led its implementation " +
+										"and integration into the first Creative Suite and selected the Open Source " +
+										"<a href='http://www.cs.fsu.edu/~engelen/soap.html'>gSoap</a> library for	our remote " +
+										"procedure-call needs; worked with Adobe	legal and University of Florida to make it viable " +
+										"for corporate development.",
 						tech		: 	"Implemented in C++ for Windows and Mac OS." 
 					},
 
@@ -128,8 +128,8 @@ robsresume.data = {
 						name 		: 	"WebAccess",
 						description : 	"Version control for non-programmers",
 						role		: 	"Architect", 					
-						detail		: 	"An internal library for full-featured network support not offered by Mac or Windows at the \
-										time. Designed API and architecture for asynchronous network protocols and coded on them.",
+						detail		: 	"An internal library for full-featured network support not offered by Mac or Windows at the " +
+										"time. Designed API and architecture for asynchronous network protocols and coded on them.",
 						tech		: 	"Implemented in C++ for Windows and Mac OS." 
 					},
 
@@ -137,9 +137,9 @@ robsresume.data = {
 						name 		: 	"CreatePDF.com",
 						description : 	"Adobe's first full web service",
 						role		: 	"Architect", 					
-						detail		: 	"CreatePDF added a web front-end and online subscriptions to the Capture 3.0 server support \
-										in Acrobat 5.0, becoming Adobe's first profitable web service. I designed and implemented the \
-										database schema and client/server protocol.",
+						detail		: 	"CreatePDF added a web front-end and online subscriptions to the Capture 3.0 server support " +
+										"in Acrobat 5.0, becoming Adobe's first profitable web service. I designed and implemented the " +
+										"database schema and client/server protocol.",
 						tech		: 	"Implemented in C++, Perl, HTML and JavaScript." 
 					},
 
@@ -147,9 +147,9 @@ robsresume.data = {
 						name 		: 	"Acrobat 5.0",
 						description : 	"Dynamic integration of back-end web services",
 						role		: 	"Plug-in Architect", 					
-						detail		: 	"Created WHAPI (Web-Hosted Application Plug-In) that self-updated, performed intranet and \
-										internet service discovery and dynamically added UI to Acrobat to access new services. \
-										Supported Capture 3.0-based OCR.",
+						detail		: 	"Created WHAPI (Web-Hosted Application Plug-In) that self-updated, performed intranet and " +
+										"internet service discovery and dynamically added UI to Acrobat to access new services. " +
+										"Supported Capture 3.0-based OCR.",
 						tech		: 	"Acrobat's first C++ plug-in, implemented for Windows and Mac OS." 
 					},
 
@@ -157,8 +157,8 @@ robsresume.data = {
 						name 		: 	"ADAM",
 						description : 	"Scanner library for Acrobat and Photoshop",
 						role		: 	"Architect", 					
-						detail		: 	"An internal product, ADAM (Adobe Device Acquisition Manager) provided a general scanning \
-										library that abstracted TWAIN and ISIS access. I co-designed and coded on it.",
+						detail		: 	"An internal product, ADAM (Adobe Device Acquisition Manager) provided a general scanning " +
+										"library that abstracted TWAIN and ISIS access. I co-designed and coded on it.",
 						tech		: 	"Implemented in C++ for Windows and Mac OS." 
 					}
 
@@ -259,18 +259,18 @@ robsresume.data = {
 
 		{
 			brief: 		"Addressed the <abbr title='World Wide Web Consortium'>W3C</abbr> about Adobe's Open Source Extensible Metadata Platform",
-			detail: 	"In 2002, <a href='http://www2002.org/devday.html#D2'>addressed the W3C developers</a> and met with \
-						<a href='http://en.wikipedia.org/wiki/Tim_Berners-Lee'>Tim Berners-Lee</a> and <a href='http://en.wikipedia.org/wiki/Ramanathan_V._Guha'> \
-						Guha</a> among others, in order to create an easily-parsable subset of <a href='http://en.wikipedia.org/wiki/Resource_Description_Framework'>RDF</a>"
+			detail: 	"In 2002, <a href='http://www2002.org/devday.html#D2'>addressed the W3C developers</a> and met with " +
+						"<a href='http://en.wikipedia.org/wiki/Tim_Berners-Lee'>Tim Berners-Lee</a> and <a href='http://en.wikipedia.org/wiki/Ramanathan_V._Guha'> " +
+						"Guha</a> among others, in order to create an easily-parsable subset of <a href='http://en.wikipedia.org/wiki/Resource_Description_Framework'>RDF</a>"
 		},
 
 		{
 			brief: 		"Helped foster telecommuter culture at Adobe",
-			detail: 	"At Adobe, I worked with teams and co-workers sited at numerous locations around the U.S and abroad.  Amongst others, I evangelized \
-						the use of Instant Messaging (IM), wiki and chatrooms to bind these widely spread teams together.  I helped provide the necessary tools, \
-						offered technical support, managed the structure of wiki sites and made myself almost constantly available to answer questions via IM. \
-						In recognition of the value of these tools, the IT department now runs them and they have become a ubiquitous aspect of Adobe's corporate \
-						culture."
+			detail: 	"At Adobe, I worked with teams and co-workers sited at numerous locations around the U.S and abroad.  Amongst others, I evangelized " +
+						"the use of Instant Messaging (IM), wiki and chatrooms to bind these widely spread teams together.  I helped provide the necessary tools, " +
+						"offered technical support, managed the structure of wiki sites and made myself almost constantly available to answer questions via IM. " +
+						"In recognition of the value of these tools, the IT department now runs them and they have become a ubiquitous aspect of Adobe's corporate " +
+						"culture."
 		}
 	],
 
@@ -314,13 +314,19 @@ $(document).ready(function() {
  	});	
 
  	$("#resumeLink").click( function() {
-		$("#resumeContent").html( htmlResume );	
+		$("#resumeContent")
+			.hide()
+			.html( htmlResume )
+			.fadeIn();
  	});
 
  	$("#plaintext").click( function() {
 		textResumeDotTemplate 	= textResumeDotTemplate || doT.template( $("#textResumeTemplate").html() );	
 		textResume				= textResume || textResumeDotTemplate( robsresume.data );
-		$("#resumeContent").html( textResume );	
+		$("#resumeContent")
+			.hide()
+			.html( textResume )
+			.fadeIn();
  	});
 
  });

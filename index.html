@@ -5,9 +5,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rob Corell's resume</title>
-	<link rel="icon" 		type="image/png" 	href="RobCorellResumeFavicon.png" />
-	<link rel="stylesheet" 	type="text/css" 	href="normalize.css" />
-	<link rel="stylesheet" 	type="text/css" 	href="resume.css" />
+	<link rel="icon" type="image/png" href="RobCorellResumeFavicon.png" />
+	<link rel="stylesheet" type="text/css" href="normalize.css" />
+	<link rel="stylesheet/less" type="text/css"	href="resume.less" />
+	<script src="less-1.3.3.min.js" type="text/javascript"></script>		
 </head>
 
 
@@ -66,8 +67,15 @@
 						<div class='project'>
 							<span class="projectName">{{=project.name}}</span>
 							<span class="projectDescription">{{=project.description}}</span>
-							<div class="projectDetail">{{=project.detail}}</div>
-							<div class="projectTech">{{=project.tech}}</div>
+							{{? project.detail }}
+								<div class="projectDetail">{{=project.detail}}</div>
+							{{?}}
+							<div>
+								{{? project.role}}
+									<span class="projectRole">{{=project.role}}</span> - 
+								{{?}}
+								<span class="projectTech">{{=project.tech}}</span>
+							</div>								
 						</div> 
 					{{~}}
 				</div>

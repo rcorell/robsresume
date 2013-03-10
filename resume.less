@@ -1,0 +1,116 @@
+
+	/* Stylesheet for Rob Corell's resume at http://robsresume.com */
+
+
+	@border-color:	#640000;
+	@font:			Calibri, Helvetica, Arial, sans-serif;
+	@text-color: 	#280000;
+
+
+
+	/* IDs */
+
+	#contactInfo {
+		float:				left;
+		list-style: 		none;
+		margin:				0px;
+	}
+
+	#name {
+		font-size:			2em;
+		font-weight:		bold;
+	}
+
+	#resume {
+		border-left:		16px solid @border-color;
+		color:				@text-color;
+		font-family:		@font;
+		max-width:			760px;
+		padding:			2em 0em 9em 2em; 	
+
+		a, a:link, a:active, a:hover, a:visited {
+			color:				@text-color;
+			cursor:				pointer;
+			text-decoration:	underline;
+		} 
+	
+		h1 {
+			margin:	0px auto;
+		}
+	}
+
+	#role {
+		font-style:			italic;
+		font-size:			1.5em;				
+	}
+
+	#skills td {
+		vertical-align:		top;
+	}
+
+	#title {
+		float:				left;
+	}
+
+
+	/* Classes */
+
+	.job {
+		@title-font-size:	14pt;
+
+		padding-bottom:  	1em;
+		padding-left:		1em;
+
+		.companyName {	
+			font-size:			@title-font-size;
+			font-weight:		bold;
+		}		
+
+		.employmentDuration {
+			float: 				right;
+			font-weight:		100;
+			font-size:			@title-font-size - 4pt;
+			padding-right:		1em;
+		}		
+	
+		.jobTitle
+		{
+			font-size:			@title-font-size;
+			font-style:			italic;	
+			font-weight:		bold;		
+		} 
+	}
+
+	.project {
+		padding: 			0.5em;	
+
+		.projectDescription {
+			font-style:			italic;
+			padding-left: 		2em;
+		}
+
+		.projectDetail {
+			display:			none;
+			padding-bottom:		0.5em;		
+		}                                                                                                                                                                                                                                                                         
+
+		.projectName {
+			font-style:			italic;
+			text-decoration: 	underline;
+		}
+
+		.projectTech {
+			padding-top:		0.5em;
+		}
+	}
+
+	.skill
+	{
+		font-style:			italic;
+		padding:			0em 1em;
+	}
+	
+	.skillDescription
+	{
+		padding:			0em 0em 0.5em 1em;
+	}

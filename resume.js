@@ -24,6 +24,11 @@ robsresume.data = {
 			description: 	"Published author, experienced public speaker, skilled at remote presence " +
 							"and achieving consensus.  I pride myself on being easily approachable and " +
 							"accessible even while meeting aggressive goals."
+		},
+
+		{
+			name:  			"Process",
+			description: 	"Project manager, Scrum Master"
 		}
 	],
 	
@@ -40,7 +45,7 @@ robsresume.data = {
 						detail		: 	"Log In with PayPal allows users to sign in to new websites using their PayPal credentials.  " +
 										"They can then skip the registration process, securely and seamlessly pay for products " +
 										"and, if they desire, consent to share information like their shipping address and phone number.",
-						tech		: 	"Implemented with JavaScript, jQuery, Node.js, Linux and Java." 
+						tech		: 	"JavaScript (jQuery, less, doT, Node.js, grunt), Linux and Java." 
 					}
 				]
 		},
@@ -56,7 +61,7 @@ robsresume.data = {
 						description	: 	"Crowdsourced survey engine with automated analytics",
 						detail		: 	"A web 2.0 survey engine that allows communities to	ask	and	rate new survey questions, view automated " +
 										"analytics about the answers, and create and rate results based on them.",
-						tech		: 	"Implemented with Ruby on Rails, jQuery, Apache, MySQL, Ubuntu and Facebook using Ruby in Steel." 
+						tech		: 	"Ruby on Rails, JavaScript/jQuery, Apache, MySQL, Ubuntu and Facebook"
 					}
 				]
 		},
@@ -76,7 +81,7 @@ robsresume.data = {
 										"and maintained the database schema, acted as technical liaison for its many client and server teams " +
 										"and managed the initial deployment.  I also designed the API for the middleware servers and implemented " +
 										"the friends feature.",
-						tech		: 	"Implemented with Flash, Flex, C++, AIR, Merb, nginx, custom database (Ozzy) and CentOS." 
+						tech		: 	"Flash, Flex, C++, AIR, Merb, nginx, custom database (Ozzy) and CentOS" 
 					},
 
 					{
@@ -86,7 +91,7 @@ robsresume.data = {
 						detail		: 	"The Ozzy project aimed to provide a storage service comparable to Amazon's S3, and to serve as a " +
 										"low-level platform for future Adobe services.  I represented client needs to the Ozzy team, consulted " +
 										"with the lead architect and drove feature requests.",
-						tech		: 	"Implemented with C++, Slackware, FastCGIs and lighttpd." 
+						tech		: 	"C++, Slackware, FastCGIs and lighttpd"
 					},
 
 					{
@@ -97,7 +102,7 @@ robsresume.data = {
 										"that supports preview of all Adobe formats, acts as an extensibility platform for the product suites " +
 										"and ships with every Adobe application.  I created the JavaScript API and redesigned the app to " +
 										"adhere to Model-View-Controller principles.",
-						tech		: 	"Implemented in C++ for Windows and Mac OS." 
+						tech		: 	"JavaScript, C++" 
 					},
 
 					{
@@ -108,7 +113,7 @@ robsresume.data = {
 										"JavaScript to be executed in the target DOM.  I identified the need for it,	gained consensus " +
 										"on its implementation strategy, designed the protocol and API, implemented version 1.0 and " +
 										"aided its integration into all CS2 Suite applications.",
-						tech		: 	"Implemented in C++ for Windows and Mac OS." 
+						tech		: 	"C++, Windows/MacOS" 
 					},
 
 					{
@@ -121,7 +126,7 @@ robsresume.data = {
 										"<a href='http://www.cs.fsu.edu/~engelen/soap.html'>gSoap</a> library for	our remote " +
 										"procedure-call needs; worked with Adobe	legal and University of Florida to make it viable " +
 										"for corporate development.",
-						tech		: 	"Implemented in C++ for Windows and Mac OS." 
+						tech		: 	"C++, Windows/MacOS" 
 					},
 
 					{
@@ -130,7 +135,7 @@ robsresume.data = {
 						role		: 	"Architect", 					
 						detail		: 	"An internal library for full-featured network support not offered by Mac or Windows at the " +
 										"time. Designed API and architecture for asynchronous network protocols and coded on them.",
-						tech		: 	"Implemented in C++ for Windows and Mac OS." 
+						tech		: 	"C++, Windows/MacOS" 
 					},
 
 					{
@@ -140,7 +145,7 @@ robsresume.data = {
 						detail		: 	"CreatePDF added a web front-end and online subscriptions to the Capture 3.0 server support " +
 										"in Acrobat 5.0, becoming Adobe's first profitable web service. I designed and implemented the " +
 										"database schema and client/server protocol.",
-						tech		: 	"Implemented in C++, Perl, HTML and JavaScript." 
+						tech		: 	"C++, Perl, HTML and JavaScript." 
 					},
 
 					{
@@ -159,7 +164,7 @@ robsresume.data = {
 						role		: 	"Architect", 					
 						detail		: 	"An internal product, ADAM (Adobe Device Acquisition Manager) provided a general scanning " +
 										"library that abstracted TWAIN and ISIS access. I co-designed and coded on it.",
-						tech		: 	"Implemented in C++ for Windows and Mac OS." 
+						tech		: 	"C++, Windows/MacOS" 
 					}
 
 				]
@@ -174,8 +179,8 @@ robsresume.data = {
 					{
 						name 		: 	"Delvers",
 						description	: 	"Diablo-style action RPG (before Diablo)",
-						detail		: 	"I created the isometric game engine and associated art tools.",
-						tech		: 	"Implemented in C++ for Windows, using DirectX." 
+						detail		: 	"Created isometric game engine and associated art tools.",
+						tech		: 	"C++ for Windows, using DirectX." 
 					}
 				]
 		},	
@@ -191,7 +196,7 @@ robsresume.data = {
 						description	: 	"Turn-based squad combat game",
 						role		: 	"Project Lead",
 						detail		: 	"Designed and implemented IPX network library and created 2D visual effects",
-						tech		: 	"Implemented in C++ for Windows." 
+						tech		: 	"C++ for Windows." 
 					},
 
 					{
@@ -199,7 +204,7 @@ robsresume.data = {
 						description	: 	"4X turn-based strategy game",
 						role		: 	"Library programer",
 						detail		: 	"Designed and implemented IPX network library and created 2D visual effects",
-						tech		: 	"Implemented in C++ for Windows." 
+						tech		: 	"C++ for Windows." 
 					}			
 				]
 		},	
@@ -214,21 +219,21 @@ robsresume.data = {
 						name 		: 	"Crusader: No Remorse",
 						description	: 	"Isometric action game",
 						detail		: 	"",
-						tech		: 	"Implemented in C++ for Windows." 
+						tech		: 	"C++ for Windows." 
 					},
 
 					{
 						name 		: 	"Ultima XIII: Pagan",
 						description	: 	"Fantasy role-playing game",
 						detail		: 	"",
-						tech		: 	"Implemented in C++ for Windows." 
+						tech		: 	"C++ for Windows." 
 					},
 
 					{
 						name 		: 	"Wing Commander Armada",
 						description	: 	"Multiplayer space combat game",
 						detail		: 	"",
-						tech		: 	"Implemented in C++ for Windows." 
+						tech		: 	"C++ for Windows." 
 					}
 				]
 		},		
@@ -301,33 +306,72 @@ robsresume.data = {
 
 $(document).ready(function() {
 
+	var mode 					= "resume";
 	var htmlResumeDotTemplate 	= doT.template( $("#htmlResumeTemplate").html() );
 	var htmlResume 				= htmlResumeDotTemplate( robsresume.data );
 	var textResumeDotTemplate 	= null;
 	var textResume 				= null;
+	var $resumeContent			= $("#resumeContent");
 
 	$("#resumeContent").html( htmlResume );	
 
- 	$( '#contactInfo' ).hide();
- 	$( '#contact' ).click( function() {
- 		$( '#contactInfo' ).fadeToggle();
- 	});	
-
  	$("#resumeLink").click( function() {
-		$("#resumeContent")
-			.hide()
-			.html( htmlResume )
-			.fadeIn();
+ 		switch( mode ) {
+ 			case "resume":
+ 				break;
+
+ 			case "CV":
+				$(".projectDetail").slideUp();
+				break;
+
+			case "plaintext":
+				$resumeContent
+					.hide()
+					.html( htmlResume )
+					.fadeIn();
+				$(".projectDetail").hide();
+				break;
+		}
+
+		mode = "resume";
  	});
+
+ 	$("#CV").click( function() {
+ 		switch( mode ) {
+ 			case "resume":
+				$(".projectDetail").slideDown();
+				break;
+
+			case "CV":
+				break;
+
+			case "plaintext":
+				$resumeContent
+					.hide()
+					.html( htmlResume )
+					.fadeIn();
+					$(".projectDetail").show();
+				break;
+		}
+
+		mode = "CV";		
+ 	}); 	
 
  	$("#plaintext").click( function() {
 		textResumeDotTemplate 	= textResumeDotTemplate || doT.template( $("#textResumeTemplate").html() );	
 		textResume				= textResume || textResumeDotTemplate( robsresume.data );
-		$("#resumeContent")
+		$resumeContent
 			.hide()
 			.html( textResume )
 			.fadeIn();
+
+		mode = "plaintext";
  	});
+
+ 	$( '#contactInfo' ).hide();
+ 	$( '#contact' ).click( function() {
+ 		$( '#contactInfo' ).fadeToggle();
+ 	});	 	
 
  });
 

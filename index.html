@@ -87,8 +87,8 @@
 			<ul>
 				{{~it.notableWorks :work}}
 					<li>
-						<div class="workBrief">		{{=work.brief}}		</div>
-						<div class="workDetail">	{{=work.detail}}	</div>
+						<span class="workBrief">{{=work.brief}}</span>
+						<div class="workDetail">{{=work.detail}}</div>
 					</li>
 				{{~}}
 			</ul>
@@ -128,8 +128,14 @@
 			{{~ it.experience :job }}
 				{{=job.companyName }}, {{=job.jobTitle}} ({{=job.employmentDuration}})<br/>
 				{{~job.projects :project }}
-					{{=project.name}} - {{=project.description}}<br/>
-					{{=project.detail}}<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;{{=project.name}} - {{=project.description}}<br/>
+					{{? project.detail}}
+						&nbsp;&nbsp;&nbsp;&nbsp;{{=project.detail}}<br/>
+					{{?}}
+					&nbsp;&nbsp&nbsp;&nbsp;
+					{{? project.role}}
+						{{=project.role}} - 
+					{{?}}
 					{{=project.tech}}<br/>
 					<br/>
 				{{~}}

@@ -59,7 +59,7 @@ robsresume.data = {
 					{
 						name 		: 	"<a href='http://traitwise.com'>Traitwise.com</a>",
 						description	: 	"Crowdsourced survey engine with automated analytics",
-						detail		: 	"A web 2.0 survey engine that allows communities to	ask	and	rate new survey questions, view automated " +
+						detail		: 	"A web 2.0 survey engine that allows communities to ask and rate new survey questions, view automated " +
 										"analytics about the answers, and create and rate results based on them.",
 						tech		: 	"Ruby on Rails, JavaScript/jQuery, Apache, MySQL, Ubuntu and Facebook"
 					}

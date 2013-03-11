@@ -321,7 +321,7 @@ $(document).ready(function() {
  				break;
 
  			case "CV":
-				$(".projectDetail").slideUp();
+				$(".cvContent").slideUp();
 				break;
 
 			case "plaintext":
@@ -329,7 +329,7 @@ $(document).ready(function() {
 					.hide()
 					.html( htmlResume )
 					.fadeIn();
-				$(".projectDetail").hide();
+				$(".cvContent").hide();
 				break;
 		}
 
@@ -339,7 +339,7 @@ $(document).ready(function() {
  	$("#CV").click( function() {
  		switch( mode ) {
  			case "resume":
-				$(".projectDetail").slideDown();
+				$(".cvContent").slideDown();
 				break;
 
 			case "CV":
@@ -350,7 +350,7 @@ $(document).ready(function() {
 					.hide()
 					.html( htmlResume )
 					.fadeIn();
-					$(".projectDetail").show();
+					$(".cvContent").show();
 				break;
 		}
 

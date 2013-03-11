@@ -68,7 +68,7 @@
 							<span class="projectName">{{=project.name}}</span>
 							<span class="projectDescription">{{=project.description}}</span>
 							{{? project.detail }}
-								<div class="projectDetail">{{=project.detail}}</div>
+								<div class="projectDetail cvContent">{{=project.detail}}</div>
 							{{?}}
 							<div>
 								{{? project.role}}
@@ -88,7 +88,9 @@
 				{{~it.notableWorks :work}}
 					<li>
 						<span class="workBrief">{{=work.brief}}</span>
-						<div class="workDetail">{{=work.detail}}</div>
+						{{? work.detail }}
+							<div class="workDetail cvContent">{{=work.detail}}</div>
+						{{?}}
 					</li>
 				{{~}}
 			</ul>

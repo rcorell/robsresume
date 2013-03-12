@@ -46,20 +46,22 @@
 	<script type="template" id="htmlResumeTemplate">
 		<section id="skills">
 			<h2>Skills</h2>
-				<table rules="cols">
-					{{~it.skills :skill}}
-						<tr>	
-							<td class="skill">				{{=skill.name}}			</td>		
-							<td class="skillDescription">	{{=skill.description}}	</td>	
-						</tr>
-					{{~}}
-				</table>
+				<div class="panel">
+					<table rules="cols">
+						{{~it.skills :skill}}
+							<tr>	
+								<td class="skill">				{{=skill.name}}			</td>		
+								<td class="skillDescription">	{{=skill.description}}	</td>	
+							</tr>
+						{{~}}
+					</table>
+				</div>
 		</section>
 
 		<section id="experience">
 			<h2>Experience</h2>
 			{{~ it.experience :job }}
-				<div class="job">
+				<div class="job panel">
 					<span class='companyName'>{{=job.companyName }}</span> - 
 					<span class='jobTitle'>{{=job.jobTitle}}</span> 
 					<span class='employmentDuration'>{{=job.employmentDuration}}</span> 
@@ -84,7 +86,7 @@
 
 		<section id="notableWorks">
 			<h2>Notable works</h2>
-			<ul>
+			<ul class="panel">
 				{{~it.notableWorks :work}}
 					<li>
 						<span class="workBrief">{{=work.brief}}</span>
@@ -98,7 +100,7 @@
 
 		<section id="references">
 			<h2>References</h2>
-			<ul>
+			<ul class="panel">
 				{{~it.references :reference}}
 					<li>
 						<a href="{{=reference.link}}">{{=reference.name}}</a> - <i>{{=reference.role}}</i>, {{=reference.company}}

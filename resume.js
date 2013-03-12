@@ -15,8 +15,8 @@ robsresume.data = {
 		
 		{
 			name: 			"Technical",
-			description: 	"API design, web services, networking, C++, JavaScript, Ruby-on-Rails, " +
-							"jQuery, metadata, cross-platform and multilingual development."
+			description: 	"API design, web services, networking, C++, JavaScript/jQuery, Ruby, Rails, " +
+							"Java, metadata, cross-platform and internationalization."
 		},
 
 		{
@@ -45,7 +45,7 @@ robsresume.data = {
 						detail		: 	"Log In with PayPal allows users to sign in to new websites using their PayPal credentials.  " +
 										"They can then skip the registration process, securely and seamlessly pay for products " +
 										"and, if they desire, consent to share information like their shipping address and phone number.",
-						tech		: 	"JavaScript (jQuery, less, doT, Node.js, grunt), Linux and Java." 
+						tech		: 	"JavaScript (jQuery, less, doT, Node.js, grunt), Java, Spring and Linux." 
 					}
 				]
 		},
@@ -79,8 +79,8 @@ robsresume.data = {
 						detail		: 	"Adobe's first large web application, this browser-based version of Photoshop for consumers tested " +
 										"the limits of the Flash development and helped sculpt the underlying service platform.  I created " +
 										"and maintained the database schema, acted as technical liaison for its many client and server teams " +
-										"and managed the initial deployment.  I also designed the API for the middleware servers and implemented " +
-										"the friends feature.",
+										"and managed the initial deployment.  Designed API for middleware servers, implemented " +
+										"friends feature.",
 						tech		: 	"Flash, Flex, C++, AIR, Merb, nginx, custom database (Ozzy) and CentOS" 
 					},
 
@@ -91,7 +91,7 @@ robsresume.data = {
 						detail		: 	"The Ozzy project aimed to provide a storage service comparable to Amazon's S3, and to serve as a " +
 										"low-level platform for future Adobe services.  I represented client needs to the Ozzy team, consulted " +
 										"with the lead architect and drove feature requests.",
-						tech		: 	"C++, Slackware, FastCGIs and lighttpd"
+						tech		: 	"C++, FastCGI, lighttpd and Slackware Linux"
 					},
 
 					{
@@ -102,7 +102,7 @@ robsresume.data = {
 										"that supports preview of all Adobe formats, acts as an extensibility platform for the product suites " +
 										"and ships with every Adobe application.  I created the JavaScript API and redesigned the app to " +
 										"adhere to Model-View-Controller principles.",
-						tech		: 	"JavaScript, C++" 
+						tech		: 	"JavaScript, C++, MySQL" 
 					},
 
 					{
@@ -123,7 +123,7 @@ robsresume.data = {
 						detail		: 	"Version Cue 1.0 offered a familiar filesystem metaphor	for version control and added an " +
 										"exception-based workflow to handle conflicts. I consulted on the API, led its implementation " +
 										"and integration into the first Creative Suite and selected the Open Source " +
-										"<a href='http://www.cs.fsu.edu/~engelen/soap.html'>gSoap</a> library for	our remote " +
+										"<a href='http://www.cs.fsu.edu/~engelen/soap.html'>gSoap</a> library for our remote " +
 										"procedure-call needs; worked with Adobe	legal and University of Florida to make it viable " +
 										"for corporate development.",
 						tech		: 	"C++, Windows/MacOS" 
@@ -145,7 +145,7 @@ robsresume.data = {
 						detail		: 	"CreatePDF added a web front-end and online subscriptions to the Capture 3.0 server support " +
 										"in Acrobat 5.0, becoming Adobe's first profitable web service. I designed and implemented the " +
 										"database schema and client/server protocol.",
-						tech		: 	"C++, Perl, HTML and JavaScript." 
+						tech		: 	"C++, Perl, HTML and JavaScript" 
 					},
 
 					{
@@ -155,7 +155,7 @@ robsresume.data = {
 						detail		: 	"Created WHAPI (Web-Hosted Application Plug-In) that self-updated, performed intranet and " +
 										"internet service discovery and dynamically added UI to Acrobat to access new services. " +
 										"Supported Capture 3.0-based OCR.",
-						tech		: 	"Acrobat's first C++ plug-in, implemented for Windows and Mac OS." 
+						tech		: 	"Acrobat's first C++ plug-in, implemented for Windows and MacOS" 
 					},
 
 					{
@@ -180,7 +180,7 @@ robsresume.data = {
 						name 		: 	"Delvers",
 						description	: 	"Diablo-style action RPG (before Diablo)",
 						detail		: 	"Created isometric game engine and associated art tools.",
-						tech		: 	"C++ for Windows, using DirectX." 
+						tech		: 	"C++ for Windows, using DirectX" 
 					}
 				]
 		},	
@@ -196,7 +196,7 @@ robsresume.data = {
 						description	: 	"Turn-based squad combat game",
 						role		: 	"Project Lead",
 						detail		: 	"Designed and implemented IPX network library and created 2D visual effects",
-						tech		: 	"C++ for Windows." 
+						tech		: 	"C++ for Windows" 
 					},
 
 					{
@@ -204,7 +204,7 @@ robsresume.data = {
 						description	: 	"4X turn-based strategy game",
 						role		: 	"Library programer",
 						detail		: 	"Designed and implemented IPX network library and created 2D visual effects",
-						tech		: 	"C++ for Windows." 
+						tech		: 	"C++ for Windows" 
 					}			
 				]
 		},	
@@ -219,21 +219,21 @@ robsresume.data = {
 						name 		: 	"Crusader: No Remorse",
 						description	: 	"Isometric action game",
 						detail		: 	"",
-						tech		: 	"C++ for Windows." 
+						tech		: 	"C++ for Windows" 
 					},
 
 					{
 						name 		: 	"Ultima XIII: Pagan",
 						description	: 	"Fantasy role-playing game",
 						detail		: 	"",
-						tech		: 	"C++ for Windows." 
+						tech		: 	"C++ for Windows" 
 					},
 
 					{
 						name 		: 	"Wing Commander Armada",
 						description	: 	"Multiplayer space combat game",
 						detail		: 	"",
-						tech		: 	"C++ for Windows." 
+						tech		: 	"C++ for Windows" 
 					}
 				]
 		},		
@@ -271,7 +271,7 @@ robsresume.data = {
 
 		{
 			brief: 		"Helped foster telecommuter culture at Adobe",
-			detail: 	"At Adobe, I worked with teams and co-workers sited at numerous locations around the U.S and abroad.  Amongst others, I evangelized " +
+			detail: 	"At Adobe, I worked with teams sited at numerous locations around the U.S and abroad.  Amongst others, I evangelized " +
 						"the use of Instant Messaging (IM), wiki and chatrooms to bind these widely spread teams together.  I helped provide the necessary tools, " +
 						"offered technical support, managed the structure of wiki sites and made myself almost constantly available to answer questions via IM. " +
 						"In recognition of the value of these tools, the IT department now runs them and they have become a ubiquitous aspect of Adobe's corporate " +

@@ -35,7 +35,7 @@
 			<a id="resumeLink">resume</a> | 
 			<a id="CV">CV</a> |			
 			<a id="plaintext">plaintext</a> |
-			<a href="resume.pdf">PDF</a> |
+			<a id="PDF">PDF</a> |
 			<a id="contact">contact</a> 			
 		</nav>
 
@@ -100,13 +100,18 @@
 
 		<section id="references">
 			<h2>References</h2>
-			<ul class="panel">
-				{{~it.references :reference}}
-					<li>
-						<a href="{{=reference.link}}">{{=reference.name}}</a> - <i>{{=reference.role}}</i>, {{=reference.company}}
-					</li>
-				{{~}}
-			</ul>
+			<div class="panel">
+				<ul>
+					{{~it.references :reference}}
+						<li>
+							<a href="{{=reference.link}}">{{=reference.name}}</a> - <i>{{=reference.role}}</i>, {{=reference.company}}
+						</li>
+					{{~}}
+				</ul>
+				<div id="introductions">
+					Introductions available upon request.
+				</div>
+			</div>
 		</section>	
 	</script>
 

@@ -10,7 +10,7 @@ robsresume.data = {
 	skills: [
 		{
 			name:			"Leadership",
-			description : 	"Architect/coder on twelve new projects from inception to success."
+			description : 	"Lead role as architect/coder on ten large projects from inception to success."
 		},
 		
 		{
@@ -22,8 +22,7 @@ robsresume.data = {
 		{
 			name: 			"Communication",
 			description: 	"Published author, experienced public speaker, skilled at remote presence " +
-							"and achieving consensus.  I pride myself on being easily approachable and " +
-							"accessible even while meeting aggressive goals."
+							"and achieving consensus."
 		},
 
 		{
@@ -368,9 +367,15 @@ $(document).ready(function() {
 		mode = "plaintext";
  	});
 
- 	$( '#contactInfo' ).hide();
- 	$( '#contact' ).click( function() {
- 		$( '#contactInfo' ).fadeToggle();
+ 	$("#CV").click( function() {
+		var jspdf = document.createElement( "link" );
+		jspdf.setAttribute( "type","text/javascript" );
+		jspdf.setAttribute( "src", "jspdf.min.js" );
+	}); 	
+
+ 	$('.contactInfo').hide();
+ 	$('#contact').click( function() {
+ 		$('.contactInfo').fadeToggle();
  	});	 	
 
  });

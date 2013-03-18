@@ -14,29 +14,86 @@
 		background-color:	#FFFFFA;
 	}
 
-
-	#contactInfo {
+	
+	.contactInfo {
 		float:				left;
 		margin:				0px;
 		padding-left: 		4em;
 	}
 
-	#controls {
+	.controls {
 		font-size:			12pt;
 	}
 
-	#introductions {
+	.cvContent {
+		display:			none;
+	}
+	
+	.introductions {
 		font-size:			12pt;
 		font-style:			italic;
 		text-align: 		right;		
 	}
 
-	#name {
+	.job {
+		@title-font-size:	14pt;
+
+		.companyName {	
+			font-size:			@title-font-size;
+			font-weight:		bold;
+		}		
+
+		.employmentDuration {
+			float: 				right;
+			font-weight:		100;
+			font-size:			@title-font-size - 4pt;
+			padding-right:		1em;
+		}		
+	
+		.jobTitle
+		{
+			font-size:			@title-font-size;
+			font-style:			italic;	
+			font-weight:		bold;		
+		} 
+	}
+
+	.name {
 		font-size:			2em;
 		font-weight:		bold;
 	}
 
-	#resume {
+	.panel {
+		background-color:	@panel-color;
+		border-radius:		10px;
+		box-shadow:  		3px 3px 4px black;	
+		margin:				1em;
+		padding:			1em;
+	}
+
+	.project {
+		padding: 			0.5em;	
+
+		.projectDescription {
+			font-style:			italic;
+			padding-left: 		2em;
+		}
+
+		.projectDetail {
+			padding-bottom:		0.5em;		
+		}                                                                                                                                                                                                                                                                         
+
+		.projectName {
+			font-style:			italic;
+			text-decoration: 	underline;
+		}
+
+		.projectTech {
+			padding-top:		0.5em;
+		}
+	}
+
+	.resume {
 		background-color: 	@background-color;
 		border-left:		16px solid @border-color;
 		border-right:		16px solid @border-color;		
@@ -73,12 +130,12 @@
 		}
 	}
 
-	#role {
+	.role {
 		font-style:			italic;
 		font-size:			1.5em;				
 	}
 
-	#skills {
+	.skills {
 
 		.skill {
 			font-style:			italic;
@@ -94,68 +151,8 @@
 		}
 	}
 
-	#title {
+	.title {
 		float:				left;
-	}
-
-
-	/* Classes */
-
-	.cvContent {
-		display:			none;
-	}
-
-	.job {
-		@title-font-size:	14pt;
-
-		.companyName {	
-			font-size:			@title-font-size;
-			font-weight:		bold;
-		}		
-
-		.employmentDuration {
-			float: 				right;
-			font-weight:		100;
-			font-size:			@title-font-size - 4pt;
-			padding-right:		1em;
-		}		
-	
-		.jobTitle
-		{
-			font-size:			@title-font-size;
-			font-style:			italic;	
-			font-weight:		bold;		
-		} 
-	}
-
-	.panel {
-		background-color:	@panel-color;
-		border-radius:		10px;
-		box-shadow:  		3px 3px 4px black;	
-		margin:				1em;
-		padding:			1em;
-	}
-
-	.project {
-		padding: 			0.5em;	
-
-		.projectDescription {
-			font-style:			italic;
-			padding-left: 		2em;
-		}
-
-		.projectDetail {
-			padding-bottom:		0.5em;		
-		}                                                                                                                                                                                                                                                                         
-
-		.projectName {
-			font-style:			italic;
-			text-decoration: 	underline;
-		}
-
-		.projectTech {
-			padding-top:		0.5em;
-		}
 	}
 
 	.workDetail {

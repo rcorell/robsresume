@@ -67,9 +67,13 @@
 					<span class='employmentDuration'>{{=job.employmentDuration}}</span> 
 					{{~job.projects :project }}
 						<div class='project'>
+							{{? project.detail }}
+								<span class="disclosure">
+							{{?}}						
 							<span class="projectName">{{=project.name}}</span>
 							<span class="projectDescription">{{=project.description}}</span>
 							{{? project.detail }}
+								<span class="indicator">[+]</span></span>
 								<div class="projectDetail cvContent">{{=project.detail}}</div>
 							{{?}}
 							<div>

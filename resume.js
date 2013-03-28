@@ -72,7 +72,7 @@ robsresume.data = {
 			projects : 				
 				[	
 					{
-						name 		: 	"<a href='http://photoshop.com'>Photoshop.com</a>",					
+						name 		: 	"Photoshop.com",					
 						description : 	"Online photo editing, organizing and storage",
 						role		: 	"Server Architect",					
 						detail		: 	"Adobe's first large web application, this browser-based version of Photoshop for consumers tested " +
@@ -303,80 +303,110 @@ robsresume.data = {
 };
 
 
+robsresume.mode	= "";
+
+robsresume.load = function( newMode ) {
+	if( newMode == robsresume.mode ) {
+		return;
+	}
+
+	var reloadControls = false;
+
+	switch( newMode ) {
+		case "resume":
+			if( robsresume.mode == "CV" ) {
+				$(".cvContent").slideUp();
+			}
+			else {
+				$(".cvContent").hide();				
+				$("#resumeContent")
+					.hide()
+					.html( robsresume.htmlResume )
+					.fadeIn();
+				reloadControls = true;
+			}
+			$(".indicator").html( "[+]" );
+			break;
+
+		case "CV":
+			if( robsresume.mode == "resume" ) {
+				$(".cvContent").slideDown();
+			}
+			else {				
+				$("#resumeContent")
+					.hide()
+					.html( robsresume.htmlResume )
+					.fadeIn();
+				$(".cvContent").show();
+				reloadControls = true;				
+			}
+			$(".indicator").html( "[-]" );				
+			break;
+
+		case "plaintext":
+			robsresume.textResumeDotTemplate 	= robsresume.textResumeDotTemplate || doT.template( $("#textResumeTemplate").html() );	
+			robsresume.textResume				= robsresume.textResume || robsresume.textResumeDotTemplate( robsresume.data );
+			$("#resumeContent")
+				.hide()
+				.html( robsresume.textResume )
+				.fadeIn();
+			break;
+
+		/*
+		case "PDF":
+			var jspdf = document.createElement( "link" );
+			jspdf.setAttribute( "type","text/javascript" );
+			jspdf.setAttribute( "src", "jspdf.min.js" );
+			break;
+		*/
+	}
+
+	if( reloadControls ) {
+ 		$(".contactInfo").hide();		
+
+		$(".disclosure").click( function() {
+			$(this).next().slideToggle();
+			var $indicator = $(this).find(".indicator");
+			if( $indicator.html() == "[+]" ) {
+				$indicator.html( "[-]" );
+			}
+			else {
+				$indicator.html( "[+]" );
+			}
+		});	
+	}
+
+	robsresume.mode	= newMode;
+}
+
 $(document).ready(function() {
 
-	var mode 					= "resume";
 	var htmlResumeDotTemplate 	= doT.template( $("#htmlResumeTemplate").html() );
-	var htmlResume 				= htmlResumeDotTemplate( robsresume.data );
-	var textResumeDotTemplate 	= null;
-	var textResume 				= null;
-	var $resumeContent			= $("#resumeContent");
+	robsresume.htmlResume 		= htmlResumeDotTemplate( robsresume.data );
 
-	$("#resumeContent").html( htmlResume );	
+	robsresume.load( "resume" );	
 
  	$("#resumeLink").click( function() {
- 		switch( mode ) {
- 			case "resume":
- 				break;
-
- 			case "CV":
-				$(".cvContent").slideUp();
-				break;
-
-			case "plaintext":
-				$resumeContent
-					.hide()
-					.html( htmlResume )
-					.fadeIn();
-				$(".cvContent").hide();
-				break;
-		}
-
-		mode = "resume";
+ 		robsresume.load( "resume" );
  	});
 
  	$("#CV").click( function() {
- 		switch( mode ) {
- 			case "resume":
-				$(".cvContent").slideDown();
-				break;
-
-			case "CV":
-				break;
-
-			case "plaintext":
-				$resumeContent
-					.hide()
-					.html( htmlResume )
-					.fadeIn();
-					$(".cvContent").show();
-				break;
-		}
-
-		mode = "CV";		
+ 		robsresume.load( "CV" );
  	}); 	
 
  	$("#plaintext").click( function() {
-		textResumeDotTemplate 	= textResumeDotTemplate || doT.template( $("#textResumeTemplate").html() );	
-		textResume				= textResume || textResumeDotTemplate( robsresume.data );
-		$resumeContent
-			.hide()
-			.html( textResume )
-			.fadeIn();
-
-		mode = "plaintext";
+		robsresume.load( "plaintext" ); 
  	});
 
- 	$("#CV").click( function() {
-		var jspdf = document.createElement( "link" );
-		jspdf.setAttribute( "type","text/javascript" );
-		jspdf.setAttribute( "src", "jspdf.min.js" );
-	}); 	
+ 	$("#contact").click( function() {
+ 		$(".contactInfo").fadeToggle();
+ 	});	  	
 
- 	$('.contactInfo').hide();
- 	$('#contact').click( function() {
- 		$('.contactInfo').fadeToggle();
- 	});	 	
+ 	/*
+ 	$("#PDF").click( function() {
+ 		robsresume.load( "plaintext" );
+	}); 	
+ 	*/
 
  });
 

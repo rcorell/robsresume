@@ -41,7 +41,7 @@ robsresume.data = {
 					{
 						name : 		"Signpost merchant app",
 						description : 	"Automates email tasks for merchants, provides a dashboard to view their progress " +
-									"and maintains a unified database of their customers including transactions and communications."
+									"and maintains a unified database of their customers including transactions and communications.",
 						detail	: 		"Signpost allows merchants to automatically perform feedback requests, manage loyalty programs, " +
 									"encourages reviews on sites like Yelp and Google+, " +
 									"generates referrals and aids creating custom recurring email campaigns.",

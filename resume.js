@@ -9,42 +9,60 @@ var robsresume = robsresume || {};
 robsresume.data = { 
 	skills: [
 		{
-			name:			"Leadership",
-			description : 	"Lead role as architect/coder on ten large projects from inception to success."
+			name:		"Leadership",
+			description : 	"Lead role as architect/coder on twelve large projects from inception to success."
 		},
 		
 		{
-			name: 			"Technical",
-			description: 	"API design, web services, networking, C++, JavaScript/jQuery, Ruby, Rails, " +
-							"Java, metadata, cross-platform and internationalization."
+			name: 		"Technical",
+			description: 	"API design, web services, networking, JavaScript/jQuery/Node, Ruby, Rails, " +
+						"Java, metadata, cross-platform and internationalization."
 		},
 
 		{
-			name: 			"Communication",
+			name: 		"Communication",
 			description: 	"Published author, experienced public speaker, skilled at remote presence " +
-							"and achieving consensus."
+						"and achieving consensus."
 		},
 
 		{
-			name:  			"Process",
+			name:  		"Process",
 			description: 	"Project manager, Scrum Master"
 		}
 	],
 	
 	experience: [
 		{
-			companyName: 			"PayPal",
-			jobTitle: 				"Senior UI Developer",
-			employmentDuration: 	"2011-current",
+			companyName: 			"Signpost",
+			jobTitle: 				"Software Developer 3",
+			employmentDuration: 	"2012-current",
 			projects : 				
 				[
 					{
-						name 		: 	"Log In with PayPal",
+						name : 		"Signpost merchant app",
+						description : 	"Automates email tasks for merchants, provides a dashboard to view their progress " +
+									"and maintains a unified database of their customers including transactions and communications."
+						detail	: 		"Signpost allows merchants to automatically perform feedback requests, manage loyalty programs, " +
+									"encourages reviews on sites like Yelp and Google+, " +
+									"generates referrals and aids creating custom recurring email campaigns.",
+						tech: 		"Node, AWS, Ruby on Rails, Heroku" 
+					}
+				]
+		},
+		
+		{
+			companyName: 			"PayPal",
+			jobTitle: 				"Senior UI Developer",
+			employmentDuration: 	"2011-2012",
+			projects : 				
+				[
+					{
+						name : 		"Log In with PayPal",
 						description : 	"Single sign-on commerce identity",
-						detail		: 	"Log In with PayPal allows users to sign in to new websites using their PayPal credentials.  " +
-										"They can then skip the registration process, securely and seamlessly pay for products " +
-										"and, if they desire, consent to share information like their shipping address and phone number.",
-						tech		: 	"JavaScript (jQuery, less, doT, Node.js, grunt), Java, Spring and Linux." 
+						detail	: 		"Log In with PayPal allows users to sign in to new websites using their PayPal credentials.  " +
+									"They can then skip the registration process, securely and seamlessly pay for products " +
+									"and, if they desire, consent to share information like their shipping address and phone number.",
+						tech: 		"JavaScript (jQuery, less, doT, Node.js, grunt), Java, Spring and Linux." 
 					}
 				]
 		},
@@ -56,30 +74,30 @@ robsresume.data = {
 			projects : 				
 				[	
 					{
-						name 		: 	"<a href='http://traitwise.com'>Traitwise.com</a>",
+						name : 		"<a href='http://traitwise.com'>Traitwise.com</a>",
 						description	: 	"Crowdsourced survey engine with automated analytics",
-						detail		: 	"A web 2.0 survey engine that allows communities to ask and rate new survey questions, view automated " +
-										"analytics about the answers, and create and rate results based on them.",
-						tech		: 	"Ruby on Rails, JavaScript/jQuery, Apache, MySQL, Ubuntu and Facebook"
+						detail	: 		"A web 2.0 survey engine that allows communities to ask and rate new survey questions, view automated " +
+									"analytics about the answers, and create and rate results based on them.",
+						tech	: 		"Ruby on Rails, JavaScript/jQuery, Apache, MySQL, Ubuntu and Facebook"
 					}
 				]
 		},
 
 		{
-			companyName : 			"Adobe",
+			companyName : 		"Adobe",
 			jobTitle: 				"Senior Architect",
 			employmentDuration : 	"1997-2008",
 			projects : 				
 				[	
 					{
-						name 		: 	"Photoshop.com",					
+						name : 		"Photoshop.com",					
 						description : 	"Online photo editing, organizing and storage",
-						role		: 	"Server Architect",					
-						detail		: 	"Adobe's first large web application, this browser-based version of Photoshop for consumers tested " +
-										"the limits of the Flash development and helped sculpt the underlying service platform.  I created " +
-										"and maintained the database schema, acted as technical liaison for its many client and server teams " +
-										"and managed the initial deployment.  Designed API for middleware servers, implemented " +
-										"friends feature.",
+						role: 			"Server Architect",					
+						detail	: 		"Adobe's first large web application, this browser-based version of Photoshop for consumers tested " +
+									"the limits of the Flash development and helped sculpt the underlying service platform.  I created " +
+									"and maintained the database schema, acted as technical liaison for its many client and server teams " +
+									"and managed the initial deployment.  Designed API for middleware servers, implemented " +
+									"friends feature.",
 						tech		: 	"Flash, Flex, C++, AIR, Merb, nginx, custom database (Ozzy) and CentOS" 
 					},
 
@@ -306,7 +324,7 @@ robsresume.data = {
 robsresume.mode	= "";
 
 robsresume.load = function( newMode ) {
-	if( newMode == robsresume.mode ) {
+	if( newMode === robsresume.mode ) {
 		return;
 	}
 
@@ -314,7 +332,7 @@ robsresume.load = function( newMode ) {
 
 	switch( newMode ) {
 		case "resume":
-			if( robsresume.mode == "CV" ) {
+			if( robsresume.mode === "CV" ) {
 				$(".cvContent").slideUp();
 			}
 			else {
@@ -329,7 +347,7 @@ robsresume.load = function( newMode ) {
 			break;
 
 		case "CV":
-			if( robsresume.mode == "resume" ) {
+			if( robsresume.mode === "resume" ) {
 				$(".cvContent").slideDown();
 			}
 			else {				
@@ -345,20 +363,12 @@ robsresume.load = function( newMode ) {
 
 		case "plaintext":
 			robsresume.textResumeDotTemplate 	= robsresume.textResumeDotTemplate || doT.template( $("#textResumeTemplate").html() );	
-			robsresume.textResume				= robsresume.textResume || robsresume.textResumeDotTemplate( robsresume.data );
+			robsresume.textResume			= robsresume.textResume || robsresume.textResumeDotTemplate( robsresume.data );
 			$("#resumeContent")
 				.hide()
 				.html( robsresume.textResume )
 				.fadeIn();
 			break;
-
-		/*
-		case "PDF":
-			var jspdf = document.createElement( "link" );
-			jspdf.setAttribute( "type","text/javascript" );
-			jspdf.setAttribute( "src", "jspdf.min.js" );
-			break;
-		*/
 	}
 
 	if( reloadControls ) {
@@ -376,7 +386,7 @@ robsresume.load = function( newMode ) {
 		});	
 	}
 
-	robsresume.mode	= newMode;
+	robsresume.mode = newMode;
 }
 
 $(document).ready(function() {
@@ -401,12 +411,6 @@ $(document).ready(function() {
  	$("#contact").click( function() {
  		$(".contactInfo").fadeToggle();
  	});	  	
-
- 	/*
- 	$("#PDF").click( function() {
- 		robsresume.load( "plaintext" );
-	}); 	
- 	*/
 
  });
 

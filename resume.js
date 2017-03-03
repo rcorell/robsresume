@@ -318,21 +318,21 @@ robsresume.data = {
 	
 		{
 			name: 		"Zack Simpson", 
-			role: 		"Chief Architect",
+			role: 		"Founder of Appsoma and Traitwise, Research Fellow at UT",
 			company: 	"Traitwise",
 			link: 		"https://www.linkedin.com/pub/zack-booth-simpson/0/4b3/108" 
 		},
 
 		{
 			name:		"Dan Brotsky", 
-			role: 		"Fellow, Chief Architect",
+			role: 		"Fellow/Chief Architect, Chief Architect",
 			company: 	"Adobe",
 			link: 		"https://www.linkedin.com/in/dbrotsky" 
 		},
 
 		{
 			name:		"Arno Gourdol", 
-			role:		"Senior Director of Product Development, Creative Cloud",
+			role:		"Senior Director of Product Development",
 			company:	"Adobe",
 			link:		"https://www.linkedin.com/in/arnog" 
 		}				

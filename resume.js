@@ -10,13 +10,13 @@ robsresume.data = {
 	skills: [
 		{
 			name:			"Leadership",
-			description: 	"Lead role as architect/coder on twelve large projects from inception to success."
+			description: 	"Architect/manager/programmer on more than twenty large projects from inception to success"
 		},
 		
 		{
 			name: 			"Technical",
-			description: 	"API design, web services, networking, JavaScript/jQuery/Node, C++, C, Ruby, Rails, " +
-							"Java, metadata, cross-platform and internationalization."
+			description: 	"Full-stack web services, API design, networking, Node/JavaScript, C++, Ruby on Rails, " +
+							"Java, metadata, cross-platform and multilingual development"
 		},
 
 		{
@@ -35,7 +35,7 @@ robsresume.data = {
 		{
 			companyName: 			"Signpost",
 			jobTitle: 				"Software Developer 3",
-			employmentDuration: 	"2012-current",
+			employmentDuration: 	"2013-2017",
 			projects: 				
 				[
 					{
@@ -50,11 +50,11 @@ robsresume.data = {
 					},
 					{
 						name:			"Control",
-						description:	"Internal tool for customer service and PM to manage customer accounts" +
-										"and maintains a unified database of their customers including transactions and communications.",
-						detail:			"Signpost allows merchants to automatically perform feedback requests, manage loyalty programs, " +
-										"encourages reviews on sites like Yelp and Google+, " +
-										"generates referrals and aids creating custom recurring email campaigns.",
+						description:	"Internal tool for customer service and PM to manage customer accounts",
+						detail:			"Using email and SMS, Signpost provides merchants the ability to automatically perform feedback " +
+										"requests, manage loyalty programs, encourage reviews on sites like Yelp and Google+, " +
+										"generate referrals and create custom recurring email campaigns.  It also provides " +
+										"a unified database of their customers including transactions and communications.",
 						tech:			"Node, AWS" 
 					}
 					
@@ -64,7 +64,7 @@ robsresume.data = {
 		{
 			companyName: 		"PayPal",
 			jobTitle: 			"Senior UI Developer",
-			employmentDuration: "2011-2012",
+			employmentDuration: "2011-2013",
 			projects: 				
 				[
 					{
@@ -73,7 +73,7 @@ robsresume.data = {
 						detail: 		"Log In with PayPal allows users to sign in to new websites using their PayPal credentials.  " +
 										"They can then skip the registration process, securely and seamlessly pay for products " +
 										"and, if they desire, consent to share information like their shipping address and phone number.",
-						tech: 			"JavaScript (jQuery, less, doT, Node, grunt), Java, Spring and Linux." 
+						tech: 			"JavaScript/Node, Java, Spring and Linux." 
 					}
 				]
 		},
@@ -105,9 +105,9 @@ robsresume.data = {
 						description: 	"Online photo editing, organizing and storage",
 						role: 			"Server Architect",					
 						detail: 		"Adobe's first large web application, this browser-based version of Photoshop for consumers tested " +
-										"the limits of the Flash development and helped sculpt the underlying service platform.  I created " +
+										"the limits of Flash development and helped sculpt the underlying service platform.  I created " +
 										"and maintained the database schema, acted as technical liaison for its many client and server teams " +
-										"and managed the initial deployment.  Designed API for middleware servers, implemented " +
+										"and managed deployment.  Designed API for middleware servers, implemented " +
 										"friends feature.",
 						tech: 			"Flash, Flex, C++, AIR, Merb, nginx, custom database (Ozzy) and CentOS" 
 					},
@@ -221,9 +221,10 @@ robsresume.data = {
 				[
 					{
 						name : 			"Agents of Justice",
-						description: 	"Turn-based squad combat game",
-						role: 			"Project Lead",
-						detail: 		"Designed and implemented IPX network library and created 2D visual effects",
+						description: 	"Turn-based superhero squad combat game",
+						role: 			"Project and Technical Lead",
+						detail: 		"Led a 12-person staff of programmers, artists and musicians, provided technical" +
+										"leadership and implemented speed optimizations.",
 						tech: 			"C++ for Windows" 
 					},
 
@@ -309,27 +310,34 @@ robsresume.data = {
 
 	references: [
 		{
+			name: 		"Tim Margheim", 
+			role: 		"Services Team Lead",
+			company: 	"Signpost",
+			link: 		"https://www.linkedin.com/in/tim-margheim-2b175b80/" 
+		},
+	
+		{
 			name: 		"Zack Simpson", 
 			role: 		"Chief Architect",
 			company: 	"Traitwise",
-			link: 		"http://www.linkedin.com/pub/zack-booth-simpson/0/4b3/108" 
+			link: 		"https://www.linkedin.com/pub/zack-booth-simpson/0/4b3/108" 
 		},
 
 		{
 			name:		"Dan Brotsky", 
 			role: 		"Fellow, Chief Architect",
 			company: 	"Adobe",
-			link: 		"http://www.linkedin.com/in/dbrotsky" 
+			link: 		"https://www.linkedin.com/in/dbrotsky" 
 		},
 
 		{
 			name:		"Arno Gourdol", 
 			role:		"Senior Director of Product Development, Creative Cloud",
 			company:	"Adobe",
-			link:		"http://www.linkedin.com/in/arnog" 
+			link:		"https://www.linkedin.com/in/arnog" 
 		}				
 	]
-}
+};
 
 
 robsresume.mode	= "";
@@ -383,7 +391,7 @@ robsresume.load = function( newMode ) {
 	}
 
 	if( reloadControls ) {
- 		$(".contactInfo").hide();		
+		$(".contactInfo").hide();		
 
 		$(".disclosure").click( function() {
 			$(this).next().slideToggle();
@@ -398,7 +406,8 @@ robsresume.load = function( newMode ) {
 	}
 
 	robsresume.mode = newMode;
-}
+};
+
 
 $(document).ready(function() {
 
@@ -407,23 +416,23 @@ $(document).ready(function() {
 
 	robsresume.load( "resume" );	
 
- 	$("#resumeLink").click( function() {
- 		robsresume.load( "resume" );
- 	});
+	$("#resumeLink").click( function() {
+		robsresume.load( "resume" );
+	});
 
- 	$("#CV").click( function() {
- 		robsresume.load( "CV" );
- 	}); 	
+	$("#CV").click( function() {
+		robsresume.load( "CV" );
+	}); 	
 
- 	$("#plaintext").click( function() {
+	$("#plaintext").click( function() {
 		robsresume.load( "plaintext" ); 
- 	});
+	});
 
- 	$("#contact").click( function() {
- 		$(".contactInfo").fadeToggle();
- 	});	  	
+	$("#contact").click( function() {
+		$(".contactInfo").fadeToggle();
+	});	  	
 
- });
+});
 
 
 

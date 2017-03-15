@@ -34,10 +34,20 @@ robsresume.data = {
 	experience: [
 		{
 			companyName: 			"Signpost",
-			jobTitle: 				"Software Developer 3",
+			jobTitle: 				"Manager, Software Developer 3",
 			employmentDuration: 	"2013-2017",
 			projects: 				
 				[
+					{
+						name:			"Control",
+						description:	"Internal tool for customer service and PM to manage customer accounts",
+						detail:			"Using email and SMS, Signpost provides merchants the ability to automatically perform feedback " +
+										"requests, manage loyalty programs, encourage reviews on sites like Yelp and Google+, " +
+										"generate referrals and create custom recurring email campaigns.  It also provides " +
+										"a unified database of their customers including transactions and communications.",
+						tech:			"Manager - Node, AWS" 
+					},
+					
 					{
 						name:			"Signpost app",
 						description:	"Automates email tasks for merchants, provides a dashboard to view their progress " +
@@ -46,18 +56,8 @@ robsresume.data = {
 										"encourage reviews on sites like Yelp and Google+, " +
 										"generate referrals and aids creating custom recurring email campaigns.  We also provide a dashboard of " +
 										"the progress as well as a unified database of their customers, complete with all transactions and communication.",
-						tech:			"Node, AWS, Ruby on Rails, Heroku" 
-					},
-					{
-						name:			"Control",
-						description:	"Internal tool for customer service and PM to manage customer accounts",
-						detail:			"Using email and SMS, Signpost provides merchants the ability to automatically perform feedback " +
-										"requests, manage loyalty programs, encourage reviews on sites like Yelp and Google+, " +
-										"generate referrals and create custom recurring email campaigns.  It also provides " +
-										"a unified database of their customers including transactions and communications.",
-						tech:			"Node, AWS" 
-					}
-					
+						tech:			"Programmer - Node, AWS, Ruby on Rails, Heroku" 
+					}										
 				]
 		},
 		
@@ -89,7 +89,7 @@ robsresume.data = {
 						description: 	"Crowdsourced survey engine with automated analytics",
 						detail: 		"A web 2.0 survey engine that allows communities to ask and rate new survey questions, view automated " +
 										"analytics about the answers, and create and rate results based on them.",
-						tech: 			"Ruby on Rails, JavaScript/jQuery, Apache, MySQL, Ubuntu and Facebook"
+						tech: 			"Manager, Programmer - Ruby on Rails, JavaScript/jQuery, Apache, MySQL, Ubuntu and Facebook"
 					}
 				]
 		},

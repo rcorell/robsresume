@@ -10,7 +10,7 @@ robsresume.data = {
 	skills: [
 		{
 			name:			"Leadership",
-			description: 	"Architect/manager/programmer on more than twenty large projects from inception to success"
+			description: 	"Architect/manager/Software Engineer on more than twenty large projects from inception to success"
 		},
 		
 		{
@@ -45,7 +45,8 @@ robsresume.data = {
 										"requests, manage loyalty programs, encourage reviews on sites like Yelp and Google+, " +
 										"generate referrals and create custom recurring email campaigns.  It also provides " +
 										"a unified database of their customers including transactions and communications.",
-						tech:			"Manager - Node, AWS" 
+						role:			"Manager",
+						tech:			"Node, AWS" 
 					},
 					
 					{
@@ -56,7 +57,8 @@ robsresume.data = {
 										"encourage reviews on sites like Yelp and Google+, " +
 										"generate referrals and aids creating custom recurring email campaigns.  We also provide a dashboard of " +
 										"the progress as well as a unified database of their customers, complete with all transactions and communication.",
-						tech:			"Programmer - Node, AWS, Ruby on Rails, Heroku" 
+						role:			"Software Engineer",
+						tech:			"Node, AWS, Ruby on Rails, Heroku" 
 					}										
 				]
 		},
@@ -89,7 +91,8 @@ robsresume.data = {
 						description: 	"Crowdsourced survey engine with automated analytics",
 						detail: 		"A web 2.0 survey engine that allows communities to ask and rate new survey questions, view automated " +
 										"analytics about the answers, and create and rate results based on them.",
-						tech: 			"Manager, Programmer - Ruby on Rails, JavaScript/jQuery, Apache, MySQL, Ubuntu and Facebook"
+						role:			"Manager, Software Engineer",
+						tech: 			"Ruby on Rails, JavaScript/jQuery, Apache, MySQL, Ubuntu and Facebook"
 					}
 				]
 		},
@@ -146,7 +149,7 @@ robsresume.data = {
 
 					{
 						name: 			"Version Cue",
-						description: 	"Version control for non-programmers",
+						description: 	"Version control for non-Software Engineers",
 						role: 			"Technical Lead", 					
 						detail: 		"Version Cue 1.0 offered a familiar filesystem metaphor	for version control and added an " +
 										"exception-based workflow to handle conflicts. I consulted on the API, led its implementation " +
@@ -208,6 +211,7 @@ robsresume.data = {
 						name : 			"Delvers",
 						description: 	"Diablo-style action RPG (before Diablo)",
 						detail: 		"Created isometric game engine and associated art tools.",
+						role:			"Manager, Architect",
 						tech: 			"C++ for Windows, using DirectX" 
 					}
 				]
@@ -215,7 +219,7 @@ robsresume.data = {
 
 		{
 			companyName: 			"SimTex / MicroProse",
-			jobTitle: 				"Project Lead, Software Engineer",
+			jobTitle: 				"Manager, Software Engineer",
 			employmentDuration : 	"1995-1996",
 			projects: 				
 				[
@@ -223,15 +227,16 @@ robsresume.data = {
 						name : 			"Agents of Justice",
 						description: 	"Turn-based superhero squad combat game",
 						role: 			"Project and Technical Lead",
-						detail: 		"Led a 12-person staff of programmers, artists and musicians, provided technical" +
+						detail: 		"Led a 12-person staff of Software Engineers, artists and musicians, provided technical" +
 										"leadership and implemented speed optimizations.",
-						tech: 			"C++ for Windows" 
+						role:			"Manager, Software Engineer",
+						tech: 			"C++ for Windows"
 					},
 
 					{
 						name : 			"Master of Orion II",
 						description: 	"4X turn-based strategy game",
-						role: 			"Library programer",
+						role: 			"Library Software Engineer",
 						detail: 		"Designed and implemented IPX network library and created 2D visual effects",
 						tech: 			"C++ for Windows" 
 					}			
